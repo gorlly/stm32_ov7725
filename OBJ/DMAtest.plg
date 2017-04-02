@@ -1,0 +1,3045 @@
+Build target 'DMAtest'
+compiling core_cm3.c...
+assembling startup_stm32f10x_hd.s...
+compiling misc.c...
+compiling stm32f10x_dma.c...
+compiling stm32f10x_rcc.c...
+compiling stm32f10x_tim.c...
+compiling stm32f10x_usart.c...
+compiling stm32f10x_gpio.c...
+compiling main.c...
+..\USER\main.c(78): warning:  #223-D: function "delay_ms" declared implicitly
+..\USER\main.c:             delay_ms(500);
+..\USER\main.c:             ^
+..\USER\main.c(79): warning:  #223-D: function "PEout" declared implicitly
+..\USER\main.c:           LED1 = !LED1;
+..\USER\main.c:           ^
+..\USER\main.c(79): error:  #137: expression must be a modifiable lvalue
+..\USER\main.c:           LED1 = !LED1;
+..\USER\main.c:           ^
+..\USER\main.c: ..\USER\main.c: 2 warnings, 1 error
+compiling stm32f10x_it.c...
+compiling system_stm32f10x.c...
+Target not created
+compiling main.c...
+..\USER\main.c(6): error:  #5: cannot open source input file "../system/uart.h": No such file or directory
+..\USER\main.c:   #include "../system/uart.h"
+..\USER\main.c:                              ^
+..\USER\main.c: ..\USER\main.c: 0 warnings, 1 error
+..\USER\main.c - 1 Error(s), 0 Warning(s).
+compiling main.c...
+..\USER\main.c(6): error:  #5: cannot open source input file "uart.h": No such file or directory
+..\USER\main.c:   #include "uart.h"
+..\USER\main.c:                    ^
+..\USER\main.c: ..\USER\main.c: 0 warnings, 1 error
+..\USER\main.c - 1 Error(s), 0 Warning(s).
+compiling main.c...
+..\USER\main.c(6): error:  #5: cannot open source input file "../system/uart.h": No such file or directory
+..\USER\main.c:   #include "../system/uart.h"
+..\USER\main.c:                              ^
+..\USER\main.c: ..\USER\main.c: 0 warnings, 1 error
+..\USER\main.c - 1 Error(s), 0 Warning(s).
+compiling main.c...
+..\USER\main.c - 0 Error(s), 0 Warning(s).
+Build target 'DMAtest'
+compiling delay.c...
+..\SYSTEM\delay.c(134): warning:  #223-D: function "SysTick_CLKSourceConfig" declared implicitly
+..\SYSTEM\delay.c:      SysTick_CLKSourceConfig(SysTick_CLKSource_HCLK_Div8);   //选择外部时钟  HCLK/8
+..\SYSTEM\delay.c:      ^
+..\SYSTEM\delay.c(134): error:  #20: identifier "SysTick_CLKSource_HCLK_Div8" is undefined
+..\SYSTEM\delay.c:      SysTick_CLKSourceConfig(SysTick_CLKSource_HCLK_Div8);   //选择外部时钟  HCLK/8
+..\SYSTEM\delay.c:                              ^
+..\SYSTEM\delay.c(135): error:  #20: identifier "SystemCoreClock" is undefined
+..\SYSTEM\delay.c:      fac_us=SystemCoreClock/8000000;                         //为系统时钟的1/8  
+..\SYSTEM\delay.c:             ^
+..\SYSTEM\delay.c: ..\SYSTEM\delay.c: 1 warning, 2 errors
+compiling sys.c...
+..\SYSTEM\sys.c(5): warning:  #223-D: function "NVIC_PriorityGroupConfig" declared implicitly
+..\SYSTEM\sys.c:       NVIC_PriorityGroupConfig(NVIC_PriorityGroup_2);
+..\SYSTEM\sys.c:       ^
+..\SYSTEM\sys.c(5): error:  #20: identifier "NVIC_PriorityGroup_2" is undefined
+..\SYSTEM\sys.c:       NVIC_PriorityGroupConfig(NVIC_PriorityGroup_2);
+..\SYSTEM\sys.c:                                ^
+..\SYSTEM\sys.c: ..\SYSTEM\sys.c: 1 warning, 1 error
+compiling usart.c...
+..\SYSTEM\usart.c(88): error:  #20: identifier "USART_InitTypeDef" is undefined
+..\SYSTEM\usart.c:      USART_InitTypeDef USART_InitStructure;
+..\SYSTEM\usart.c:      ^
+..\SYSTEM\usart.c(89): error:  #20: identifier "NVIC_InitTypeDef" is undefined
+..\SYSTEM\usart.c:      NVIC_InitTypeDef NVIC_InitStructure;
+..\SYSTEM\usart.c:      ^
+..\SYSTEM\usart.c(109): warning:  #223-D: function "NVIC_Init" declared implicitly
+..\SYSTEM\usart.c:      NVIC_Init(&NVIC_InitStructure); //根据指定的参数初始化VIC寄存器
+..\SYSTEM\usart.c:      ^
+..\SYSTEM\usart.c(114): error:  #20: identifier "USART_WordLength_8b" is undefined
+..\SYSTEM\usart.c:      USART_InitStructure.USART_WordLength = USART_WordLength_8b;//字长为8位数据格式
+..\SYSTEM\usart.c:                                             ^
+..\SYSTEM\usart.c(115): error:  #20: identifier "USART_StopBits_1" is undefined
+..\SYSTEM\usart.c:      USART_InitStructure.USART_StopBits = USART_StopBits_1;//一个停止位
+..\SYSTEM\usart.c:                                           ^
+..\SYSTEM\usart.c(116): error:  #20: identifier "USART_Parity_No" is undefined
+..\SYSTEM\usart.c:      USART_InitStructure.USART_Parity = USART_Parity_No;//无奇偶校验位
+..\SYSTEM\usart.c:                                         ^
+..\SYSTEM\usart.c(117): error:  #20: identifier "USART_HardwareFlowControl_None" is undefined
+..\SYSTEM\usart.c:      USART_InitStructure.USART_HardwareFlowControl = USART_HardwareFlowControl_None;//无硬件数据流控制
+..\SYSTEM\usart.c:                                                      ^
+..\SYSTEM\usart.c(118): error:  #20: identifier "USART_Mode_Rx" is undefined
+..\SYSTEM\usart.c:      USART_InitStructure.USART_Mode = USART_Mode_Rx | USART_Mode_Tx; //收发模式
+..\SYSTEM\usart.c:                                       ^
+..\SYSTEM\usart.c(118): error:  #20: identifier "USART_Mode_Tx" is undefined
+..\SYSTEM\usart.c:      USART_InitStructure.USART_Mode = USART_Mode_Rx | USART_Mode_Tx; //收发模式
+..\SYSTEM\usart.c:                                                       ^
+..\SYSTEM\usart.c(120): warning:  #223-D: function "USART_Init" declared implicitly
+..\SYSTEM\usart.c:       USART_Init(USART1, &USART_InitStructure); //初始化串口1
+..\SYSTEM\usart.c:       ^
+..\SYSTEM\usart.c(121): warning:  #223-D: function "USART_ITConfig" declared implicitly
+..\SYSTEM\usart.c:       USART_ITConfig(USART1, USART_IT_RXNE, ENABLE);//开启串口接受中断
+..\SYSTEM\usart.c:       ^
+..\SYSTEM\usart.c(121): error:  #20: identifier "USART_IT_RXNE" is undefined
+..\SYSTEM\usart.c:       USART_ITConfig(USART1, USART_IT_RXNE, ENABLE);//开启串口接受中断
+..\SYSTEM\usart.c:                              ^
+..\SYSTEM\usart.c(122): warning:  #223-D: function "USART_Cmd" declared implicitly
+..\SYSTEM\usart.c:       USART_Cmd(USART1, ENABLE);                    //使能串口1 
+..\SYSTEM\usart.c:       ^
+..\SYSTEM\usart.c(132): warning:  #223-D: function "USART_GetITStatus" declared implicitly
+..\SYSTEM\usart.c:      if(USART_GetITStatus(USART1, USART_IT_RXNE) != RESET)  //接收中断(接收到的数据必须是0x0d 0x0a结尾)
+..\SYSTEM\usart.c:         ^
+..\SYSTEM\usart.c(132): error:  #20: identifier "USART_IT_RXNE" is undefined
+..\SYSTEM\usart.c:      if(USART_GetITStatus(USART1, USART_IT_RXNE) != RESET)  //接收中断(接收到的数据必须是0x0d 0x0a结尾)
+..\SYSTEM\usart.c:                                   ^
+..\SYSTEM\usart.c(134): warning:  #223-D: function "USART_ReceiveData" declared implicitly
+..\SYSTEM\usart.c:              Res =USART_ReceiveData(USART1); //读取接收到的数据
+..\SYSTEM\usart.c:                   ^
+..\SYSTEM\usart.c: ..\SYSTEM\usart.c: 6 warnings, 10 errors
+Target not created
+compiling main.c...
+..\USER\main.c - 0 Error(s), 0 Warning(s).
+Build target 'DMAtest'
+compiling delay.c...
+..\SYSTEM\delay.c(134): warning:  #223-D: function "SysTick_CLKSourceConfig" declared implicitly
+..\SYSTEM\delay.c:      SysTick_CLKSourceConfig(SysTick_CLKSource_HCLK_Div8);   //选择外部时钟  HCLK/8
+..\SYSTEM\delay.c:      ^
+..\SYSTEM\delay.c(134): error:  #20: identifier "SysTick_CLKSource_HCLK_Div8" is undefined
+..\SYSTEM\delay.c:      SysTick_CLKSourceConfig(SysTick_CLKSource_HCLK_Div8);   //选择外部时钟  HCLK/8
+..\SYSTEM\delay.c:                              ^
+..\SYSTEM\delay.c(135): error:  #20: identifier "SystemCoreClock" is undefined
+..\SYSTEM\delay.c:      fac_us=SystemCoreClock/8000000;                         //为系统时钟的1/8  
+..\SYSTEM\delay.c:             ^
+..\SYSTEM\delay.c: ..\SYSTEM\delay.c: 1 warning, 2 errors
+compiling sys.c...
+..\SYSTEM\sys.c(5): warning:  #223-D: function "NVIC_PriorityGroupConfig" declared implicitly
+..\SYSTEM\sys.c:       NVIC_PriorityGroupConfig(NVIC_PriorityGroup_2);
+..\SYSTEM\sys.c:       ^
+..\SYSTEM\sys.c(5): error:  #20: identifier "NVIC_PriorityGroup_2" is undefined
+..\SYSTEM\sys.c:       NVIC_PriorityGroupConfig(NVIC_PriorityGroup_2);
+..\SYSTEM\sys.c:                                ^
+..\SYSTEM\sys.c: ..\SYSTEM\sys.c: 1 warning, 1 error
+compiling usart.c...
+..\SYSTEM\usart.c(88): error:  #20: identifier "USART_InitTypeDef" is undefined
+..\SYSTEM\usart.c:      USART_InitTypeDef USART_InitStructure;
+..\SYSTEM\usart.c:      ^
+..\SYSTEM\usart.c(89): error:  #20: identifier "NVIC_InitTypeDef" is undefined
+..\SYSTEM\usart.c:      NVIC_InitTypeDef NVIC_InitStructure;
+..\SYSTEM\usart.c:      ^
+..\SYSTEM\usart.c(109): warning:  #223-D: function "NVIC_Init" declared implicitly
+..\SYSTEM\usart.c:      NVIC_Init(&NVIC_InitStructure); //根据指定的参数初始化VIC寄存器
+..\SYSTEM\usart.c:      ^
+..\SYSTEM\usart.c(114): error:  #20: identifier "USART_WordLength_8b" is undefined
+..\SYSTEM\usart.c:      USART_InitStructure.USART_WordLength = USART_WordLength_8b;//字长为8位数据格式
+..\SYSTEM\usart.c:                                             ^
+..\SYSTEM\usart.c(115): error:  #20: identifier "USART_StopBits_1" is undefined
+..\SYSTEM\usart.c:      USART_InitStructure.USART_StopBits = USART_StopBits_1;//一个停止位
+..\SYSTEM\usart.c:                                           ^
+..\SYSTEM\usart.c(116): error:  #20: identifier "USART_Parity_No" is undefined
+..\SYSTEM\usart.c:      USART_InitStructure.USART_Parity = USART_Parity_No;//无奇偶校验位
+..\SYSTEM\usart.c:                                         ^
+..\SYSTEM\usart.c(117): error:  #20: identifier "USART_HardwareFlowControl_None" is undefined
+..\SYSTEM\usart.c:      USART_InitStructure.USART_HardwareFlowControl = USART_HardwareFlowControl_None;//无硬件数据流控制
+..\SYSTEM\usart.c:                                                      ^
+..\SYSTEM\usart.c(118): error:  #20: identifier "USART_Mode_Rx" is undefined
+..\SYSTEM\usart.c:      USART_InitStructure.USART_Mode = USART_Mode_Rx | USART_Mode_Tx; //收发模式
+..\SYSTEM\usart.c:                                       ^
+..\SYSTEM\usart.c(118): error:  #20: identifier "USART_Mode_Tx" is undefined
+..\SYSTEM\usart.c:      USART_InitStructure.USART_Mode = USART_Mode_Rx | USART_Mode_Tx; //收发模式
+..\SYSTEM\usart.c:                                                       ^
+..\SYSTEM\usart.c(120): warning:  #223-D: function "USART_Init" declared implicitly
+..\SYSTEM\usart.c:       USART_Init(USART1, &USART_InitStructure); //初始化串口1
+..\SYSTEM\usart.c:       ^
+..\SYSTEM\usart.c(121): warning:  #223-D: function "USART_ITConfig" declared implicitly
+..\SYSTEM\usart.c:       USART_ITConfig(USART1, USART_IT_RXNE, ENABLE);//开启串口接受中断
+..\SYSTEM\usart.c:       ^
+..\SYSTEM\usart.c(121): error:  #20: identifier "USART_IT_RXNE" is undefined
+..\SYSTEM\usart.c:       USART_ITConfig(USART1, USART_IT_RXNE, ENABLE);//开启串口接受中断
+..\SYSTEM\usart.c:                              ^
+..\SYSTEM\usart.c(122): warning:  #223-D: function "USART_Cmd" declared implicitly
+..\SYSTEM\usart.c:       USART_Cmd(USART1, ENABLE);                    //使能串口1 
+..\SYSTEM\usart.c:       ^
+..\SYSTEM\usart.c(132): warning:  #223-D: function "USART_GetITStatus" declared implicitly
+..\SYSTEM\usart.c:      if(USART_GetITStatus(USART1, USART_IT_RXNE) != RESET)  //接收中断(接收到的数据必须是0x0d 0x0a结尾)
+..\SYSTEM\usart.c:         ^
+..\SYSTEM\usart.c(132): error:  #20: identifier "USART_IT_RXNE" is undefined
+..\SYSTEM\usart.c:      if(USART_GetITStatus(USART1, USART_IT_RXNE) != RESET)  //接收中断(接收到的数据必须是0x0d 0x0a结尾)
+..\SYSTEM\usart.c:                                   ^
+..\SYSTEM\usart.c(134): warning:  #223-D: function "USART_ReceiveData" declared implicitly
+..\SYSTEM\usart.c:              Res =USART_ReceiveData(USART1); //读取接收到的数据
+..\SYSTEM\usart.c:                   ^
+..\SYSTEM\usart.c: ..\SYSTEM\usart.c: 6 warnings, 10 errors
+Target not created
+Build target 'DMAtest'
+compiling core_cm3.c...
+assembling startup_stm32f10x_hd.s...
+compiling misc.c...
+compiling stm32f10x_dma.c...
+compiling stm32f10x_rcc.c...
+compiling stm32f10x_tim.c...
+compiling stm32f10x_usart.c...
+compiling stm32f10x_gpio.c...
+compiling main.c...
+compiling stm32f10x_it.c...
+compiling system_stm32f10x.c...
+linking...
+Program Size: Code=620 RO-data=336 RW-data=20 ZI-data=1028  
+FromELF: creating hex file...
+"..\OBJ\DMAtest.axf" - 0 Error(s), 0 Warning(s).
+Build target 'DMAtest'
+compiling core_cm3.c...
+assembling startup_stm32f10x_hd.s...
+compiling misc.c...
+compiling stm32f10x_dma.c...
+compiling stm32f10x_rcc.c...
+compiling stm32f10x_tim.c...
+compiling stm32f10x_usart.c...
+compiling stm32f10x_gpio.c...
+compiling main.c...
+compiling stm32f10x_it.c...
+compiling system_stm32f10x.c...
+compiling delay.c...
+..\SYSTEM\delay.c(133): warning:  #223-D: function "SysTick_CLKSourceConfig" declared implicitly
+..\SYSTEM\delay.c:      SysTick_CLKSourceConfig(SysTick_CLKSource_HCLK_Div8);   //选择外部时钟  HCLK/8
+..\SYSTEM\delay.c:      ^
+..\SYSTEM\delay.c(133): error:  #20: identifier "SysTick_CLKSource_HCLK_Div8" is undefined
+..\SYSTEM\delay.c:      SysTick_CLKSourceConfig(SysTick_CLKSource_HCLK_Div8);   //选择外部时钟  HCLK/8
+..\SYSTEM\delay.c:                              ^
+..\SYSTEM\delay.c(134): error:  #20: identifier "SystemCoreClock" is undefined
+..\SYSTEM\delay.c:      fac_us=SystemCoreClock/8000000;                         //为系统时钟的1/8  
+..\SYSTEM\delay.c:             ^
+..\SYSTEM\delay.c: ..\SYSTEM\delay.c: 1 warning, 2 errors
+compiling sys.c...
+..\SYSTEM\sys.c(19): error:  #1113: Inline assembler not permitted when generating Thumb code
+..\SYSTEM\sys.c:        __ASM volatile("wfi");            
+..\SYSTEM\sys.c:        ^
+..\SYSTEM\sys.c: ..\SYSTEM\sys.c: 0 warnings, 1 error
+compiling usart.c...
+..\SYSTEM\usart.c(48): error:  #260-D: explicit type is missing ("int" assumed)
+..\SYSTEM\usart.c:   _sys_exit(int x) 
+..\SYSTEM\usart.c:   ^
+..\SYSTEM\usart.c(92): error:  #20: identifier "USART_InitTypeDef" is undefined
+..\SYSTEM\usart.c:      USART_InitTypeDef USART_InitStructure;
+..\SYSTEM\usart.c:      ^
+..\SYSTEM\usart.c(93): error:  #20: identifier "NVIC_InitTypeDef" is undefined
+..\SYSTEM\usart.c:      NVIC_InitTypeDef NVIC_InitStructure;
+..\SYSTEM\usart.c:      ^
+..\SYSTEM\usart.c(113): warning:  #223-D: function "NVIC_Init" declared implicitly
+..\SYSTEM\usart.c:      NVIC_Init(&NVIC_InitStructure); //根据指定的参数初始化VIC寄存器
+..\SYSTEM\usart.c:      ^
+..\SYSTEM\usart.c(118): error:  #20: identifier "USART_WordLength_8b" is undefined
+..\SYSTEM\usart.c:      USART_InitStructure.USART_WordLength = USART_WordLength_8b;//字长为8位数据格式
+..\SYSTEM\usart.c:                                             ^
+..\SYSTEM\usart.c(119): error:  #20: identifier "USART_StopBits_1" is undefined
+..\SYSTEM\usart.c:      USART_InitStructure.USART_StopBits = USART_StopBits_1;//一个停止位
+..\SYSTEM\usart.c:                                           ^
+..\SYSTEM\usart.c(120): error:  #20: identifier "USART_Parity_No" is undefined
+..\SYSTEM\usart.c:      USART_InitStructure.USART_Parity = USART_Parity_No;//无奇偶校验位
+..\SYSTEM\usart.c:                                         ^
+..\SYSTEM\usart.c(121): error:  #20: identifier "USART_HardwareFlowControl_None" is undefined
+..\SYSTEM\usart.c:      USART_InitStructure.USART_HardwareFlowControl = USART_HardwareFlowControl_None;//无硬件数据流控制
+..\SYSTEM\usart.c:                                                      ^
+..\SYSTEM\usart.c(122): error:  #20: identifier "USART_Mode_Rx" is undefined
+..\SYSTEM\usart.c:      USART_InitStructure.USART_Mode = USART_Mode_Rx | USART_Mode_Tx; //收发模式
+..\SYSTEM\usart.c:                                       ^
+..\SYSTEM\usart.c(122): error:  #20: identifier "USART_Mode_Tx" is undefined
+..\SYSTEM\usart.c:      USART_InitStructure.USART_Mode = USART_Mode_Rx | USART_Mode_Tx; //收发模式
+..\SYSTEM\usart.c:                                                       ^
+..\SYSTEM\usart.c(124): warning:  #223-D: function "USART_Init" declared implicitly
+..\SYSTEM\usart.c:     USART_Init(USART1, &USART_InitStructure); //初始化串口1
+..\SYSTEM\usart.c:     ^
+..\SYSTEM\usart.c(125): warning:  #223-D: function "USART_ITConfig" declared implicitly
+..\SYSTEM\usart.c:     USART_ITConfig(USART1, USART_IT_RXNE, ENABLE);//开启串口接受中断
+..\SYSTEM\usart.c:     ^
+..\SYSTEM\usart.c(125): error:  #20: identifier "USART_IT_RXNE" is undefined
+..\SYSTEM\usart.c:     USART_ITConfig(USART1, USART_IT_RXNE, ENABLE);//开启串口接受中断
+..\SYSTEM\usart.c:                            ^
+..\SYSTEM\usart.c(126): warning:  #223-D: function "USART_Cmd" declared implicitly
+..\SYSTEM\usart.c:     USART_Cmd(USART1, ENABLE);                    //使能串口1 
+..\SYSTEM\usart.c:     ^
+..\SYSTEM\usart.c(136): warning:  #223-D: function "USART_GetITStatus" declared implicitly
+..\SYSTEM\usart.c:      if(USART_GetITStatus(USART1, USART_IT_RXNE) != RESET)  //接收中断(接收到的数据必须是0x0d 0x0a结尾)
+..\SYSTEM\usart.c:         ^
+..\SYSTEM\usart.c(136): error:  #20: identifier "USART_IT_RXNE" is undefined
+..\SYSTEM\usart.c:      if(USART_GetITStatus(USART1, USART_IT_RXNE) != RESET)  //接收中断(接收到的数据必须是0x0d 0x0a结尾)
+..\SYSTEM\usart.c:                                   ^
+..\SYSTEM\usart.c(138): warning:  #223-D: function "USART_ReceiveData" declared implicitly
+..\SYSTEM\usart.c:              Res =USART_ReceiveData(USART1); //读取接收到的数据
+..\SYSTEM\usart.c:                   ^
+..\SYSTEM\usart.c: ..\SYSTEM\usart.c: 6 warnings, 11 errors
+Target not created
+Build target 'DMAtest'
+compiling core_cm3.c...
+assembling startup_stm32f10x_hd.s...
+compiling misc.c...
+compiling stm32f10x_dma.c...
+compiling stm32f10x_rcc.c...
+compiling stm32f10x_tim.c...
+compiling stm32f10x_usart.c...
+compiling stm32f10x_gpio.c...
+compiling main.c...
+compiling stm32f10x_it.c...
+compiling system_stm32f10x.c...
+compiling bsp_SysTick.c...
+..\USER\bsp_SysTick.c(35): error:  #20: identifier "SystemCoreClock" is undefined
+..\USER\bsp_SysTick.c:          if (SysTick_Config(SystemCoreClock/1000))       
+..\USER\bsp_SysTick.c:                             ^
+..\USER\bsp_SysTick.c: ..\USER\bsp_SysTick.c: 0 warnings, 1 error
+Target not created
+Build target 'DMAtest'
+compiling core_cm3.c...
+..\CORE\core_cm3.h(1502): error:  #20: identifier "IRQn_Type" is undefined
+..\CORE\core_cm3.h:   static __INLINE void NVIC_EnableIRQ(IRQn_Type IRQn)
+..\CORE\core_cm3.h:                                       ^
+..\CORE\core_cm3.h(1515): error:  #20: identifier "IRQn_Type" is undefined
+..\CORE\core_cm3.h:   static __INLINE void NVIC_DisableIRQ(IRQn_Type IRQn)
+..\CORE\core_cm3.h:                                        ^
+..\CORE\core_cm3.h(1529): error:  #20: identifier "IRQn_Type" is undefined
+..\CORE\core_cm3.h:   static __INLINE uint32_t NVIC_GetPendingIRQ(IRQn_Type IRQn)
+..\CORE\core_cm3.h:                                               ^
+..\CORE\core_cm3.h(1542): error:  #20: identifier "IRQn_Type" is undefined
+..\CORE\core_cm3.h:   static __INLINE void NVIC_SetPendingIRQ(IRQn_Type IRQn)
+..\CORE\core_cm3.h:                                           ^
+..\CORE\core_cm3.h(1555): error:  #20: identifier "IRQn_Type" is undefined
+..\CORE\core_cm3.h:   static __INLINE void NVIC_ClearPendingIRQ(IRQn_Type IRQn)
+..\CORE\core_cm3.h:                                             ^
+..\CORE\core_cm3.h(1569): error:  #20: identifier "IRQn_Type" is undefined
+..\CORE\core_cm3.h:   static __INLINE uint32_t NVIC_GetActive(IRQn_Type IRQn)
+..\CORE\core_cm3.h:                                           ^
+..\CORE\core_cm3.h(1586): error:  #20: identifier "IRQn_Type" is undefined
+..\CORE\core_cm3.h:   static __INLINE void NVIC_SetPriority(IRQn_Type IRQn, uint32_t priority)
+..\CORE\core_cm3.h:                                         ^
+..\CORE\core_cm3.h(1609): error:  #20: identifier "IRQn_Type" is undefined
+..\CORE\core_cm3.h:   static __INLINE uint32_t NVIC_GetPriority(IRQn_Type IRQn)
+..\CORE\core_cm3.h:                                             ^
+..\CORE\core_cm3.h(1699): error:  #20: identifier "SysTick_IRQn" is undefined
+..\CORE\core_cm3.h:     NVIC_SetPriority (SysTick_IRQn, (1<<__NVIC_PRIO_BITS) - 1);  /* set Priority for Cortex-M0 System Interrupts */
+..\CORE\core_cm3.h:                       ^
+..\CORE\core_cm3.h: ..\CORE\core_cm3.c: 0 warnings, 9 errors
+assembling startup_stm32f10x_hd.s...
+compiling misc.c...
+compiling stm32f10x_dma.c...
+compiling stm32f10x_rcc.c...
+compiling stm32f10x_tim.c...
+compiling stm32f10x_usart.c...
+compiling stm32f10x_gpio.c...
+compiling main.c...
+compiling stm32f10x_it.c...
+compiling system_stm32f10x.c...
+compiling bsp_SysTick.c...
+..\USER\bsp_SysTick.c(21): error:  #7: unrecognized token
+..\USER\bsp_SysTick.c:   ” 
+..\USER\bsp_SysTick.c:   ^
+..\USER\bsp_SysTick.c(21): error:  #169: expected a declaration
+..\USER\bsp_SysTick.c:   ” 
+..\USER\bsp_SysTick.c:   ^
+..\USER\bsp_SysTick.c(21): error:  #7: unrecognized token
+..\USER\bsp_SysTick.c:   ” 
+..\USER\bsp_SysTick.c:    ^
+..\USER\bsp_SysTick.c(36): error:  #20: identifier "SystemCoreClock" is undefined
+..\USER\bsp_SysTick.c:          if (SysTick_Config(SystemCoreClock/1000))       
+..\USER\bsp_SysTick.c:                             ^
+..\USER\bsp_SysTick.c(48): error:  #20: identifier "TimingDelay" is undefined
+..\USER\bsp_SysTick.c:          if (TimingDelay != 0x00)
+..\USER\bsp_SysTick.c:              ^
+..\USER\bsp_SysTick.c(54): error:  #20: identifier "TimingDelay" is undefined
+..\USER\bsp_SysTick.c:          TimingDelay = nTime;
+..\USER\bsp_SysTick.c:          ^
+..\USER\bsp_SysTick.c: ..\USER\bsp_SysTick.c: 0 warnings, 6 errors
+Target not created
+Build target 'DMAtest'
+compiling core_cm3.c...
+..\CORE\core_cm3.h(1502): error:  #20: identifier "IRQn_Type" is undefined
+..\CORE\core_cm3.h:   static __INLINE void NVIC_EnableIRQ(IRQn_Type IRQn)
+..\CORE\core_cm3.h:                                       ^
+..\CORE\core_cm3.h(1515): error:  #20: identifier "IRQn_Type" is undefined
+..\CORE\core_cm3.h:   static __INLINE void NVIC_DisableIRQ(IRQn_Type IRQn)
+..\CORE\core_cm3.h:                                        ^
+..\CORE\core_cm3.h(1529): error:  #20: identifier "IRQn_Type" is undefined
+..\CORE\core_cm3.h:   static __INLINE uint32_t NVIC_GetPendingIRQ(IRQn_Type IRQn)
+..\CORE\core_cm3.h:                                               ^
+..\CORE\core_cm3.h(1542): error:  #20: identifier "IRQn_Type" is undefined
+..\CORE\core_cm3.h:   static __INLINE void NVIC_SetPendingIRQ(IRQn_Type IRQn)
+..\CORE\core_cm3.h:                                           ^
+..\CORE\core_cm3.h(1555): error:  #20: identifier "IRQn_Type" is undefined
+..\CORE\core_cm3.h:   static __INLINE void NVIC_ClearPendingIRQ(IRQn_Type IRQn)
+..\CORE\core_cm3.h:                                             ^
+..\CORE\core_cm3.h(1569): error:  #20: identifier "IRQn_Type" is undefined
+..\CORE\core_cm3.h:   static __INLINE uint32_t NVIC_GetActive(IRQn_Type IRQn)
+..\CORE\core_cm3.h:                                           ^
+..\CORE\core_cm3.h(1586): error:  #20: identifier "IRQn_Type" is undefined
+..\CORE\core_cm3.h:   static __INLINE void NVIC_SetPriority(IRQn_Type IRQn, uint32_t priority)
+..\CORE\core_cm3.h:                                         ^
+..\CORE\core_cm3.h(1609): error:  #20: identifier "IRQn_Type" is undefined
+..\CORE\core_cm3.h:   static __INLINE uint32_t NVIC_GetPriority(IRQn_Type IRQn)
+..\CORE\core_cm3.h:                                             ^
+..\CORE\core_cm3.h(1699): error:  #20: identifier "SysTick_IRQn" is undefined
+..\CORE\core_cm3.h:     NVIC_SetPriority (SysTick_IRQn, (1<<__NVIC_PRIO_BITS) - 1);  /* set Priority for Cortex-M0 System Interrupts */
+..\CORE\core_cm3.h:                       ^
+..\CORE\core_cm3.h: ..\CORE\core_cm3.c: 0 warnings, 9 errors
+assembling startup_stm32f10x_hd.s...
+compiling misc.c...
+compiling stm32f10x_dma.c...
+compiling stm32f10x_rcc.c...
+compiling stm32f10x_tim.c...
+compiling stm32f10x_usart.c...
+compiling stm32f10x_gpio.c...
+compiling main.c...
+compiling stm32f10x_it.c...
+compiling system_stm32f10x.c...
+compiling bsp_SysTick.c...
+..\USER\bsp_SysTick.c(21): error:  #7: unrecognized token
+..\USER\bsp_SysTick.c:   ” 
+..\USER\bsp_SysTick.c:   ^
+..\USER\bsp_SysTick.c(21): error:  #169: expected a declaration
+..\USER\bsp_SysTick.c:   ” 
+..\USER\bsp_SysTick.c:   ^
+..\USER\bsp_SysTick.c(21): error:  #7: unrecognized token
+..\USER\bsp_SysTick.c:   ” 
+..\USER\bsp_SysTick.c:    ^
+..\USER\bsp_SysTick.c(36): error:  #20: identifier "SystemCoreClock" is undefined
+..\USER\bsp_SysTick.c:          if (SysTick_Config(SystemCoreClock/1000))       
+..\USER\bsp_SysTick.c:                             ^
+..\USER\bsp_SysTick.c(48): error:  #20: identifier "TimingDelay" is undefined
+..\USER\bsp_SysTick.c:          if (TimingDelay != 0x00)
+..\USER\bsp_SysTick.c:              ^
+..\USER\bsp_SysTick.c(54): error:  #20: identifier "TimingDelay" is undefined
+..\USER\bsp_SysTick.c:          TimingDelay = nTime;
+..\USER\bsp_SysTick.c:          ^
+..\USER\bsp_SysTick.c: ..\USER\bsp_SysTick.c: 0 warnings, 6 errors
+Target not created
+compiling bsp_SysTick.c...
+..\USER\bsp_SysTick.c(20): error:  #5: cannot open source input file "./core/core_cm3.h": No such file or directory
+..\USER\bsp_SysTick.c:   #include "./core/core_cm3.h"
+..\USER\bsp_SysTick.c:                               ^
+..\USER\bsp_SysTick.c: ..\USER\bsp_SysTick.c: 0 warnings, 1 error
+..\USER\bsp_SysTick.c - 1 Error(s), 0 Warning(s).
+compiling bsp_SysTick.c...
+..\USER\bsp_SysTick.c(21): error:  #7: unrecognized token
+..\USER\bsp_SysTick.c:   ” 
+..\USER\bsp_SysTick.c:   ^
+..\USER\bsp_SysTick.c(21): error:  #169: expected a declaration
+..\USER\bsp_SysTick.c:   ” 
+..\USER\bsp_SysTick.c:   ^
+..\USER\bsp_SysTick.c(21): error:  #7: unrecognized token
+..\USER\bsp_SysTick.c:   ” 
+..\USER\bsp_SysTick.c:    ^
+..\USER\bsp_SysTick.c(36): error:  #20: identifier "SystemCoreClock" is undefined
+..\USER\bsp_SysTick.c:          if (SysTick_Config(SystemCoreClock/1000))       
+..\USER\bsp_SysTick.c:                             ^
+..\USER\bsp_SysTick.c(48): error:  #20: identifier "TimingDelay" is undefined
+..\USER\bsp_SysTick.c:          if (TimingDelay != 0x00)
+..\USER\bsp_SysTick.c:              ^
+..\USER\bsp_SysTick.c(54): error:  #20: identifier "TimingDelay" is undefined
+..\USER\bsp_SysTick.c:          TimingDelay = nTime;
+..\USER\bsp_SysTick.c:          ^
+..\USER\bsp_SysTick.c: ..\USER\bsp_SysTick.c: 0 warnings, 6 errors
+..\USER\bsp_SysTick.c - 6 Error(s), 0 Warning(s).
+compiling bsp_SysTick.c...
+..\USER\bsp_SysTick.c(21): error:  #7: unrecognized token
+..\USER\bsp_SysTick.c:   ” 
+..\USER\bsp_SysTick.c:   ^
+..\USER\bsp_SysTick.c(21): error:  #169: expected a declaration
+..\USER\bsp_SysTick.c:   ” 
+..\USER\bsp_SysTick.c:   ^
+..\USER\bsp_SysTick.c(21): error:  #7: unrecognized token
+..\USER\bsp_SysTick.c:   ” 
+..\USER\bsp_SysTick.c:    ^
+..\USER\bsp_SysTick.c(36): error:  #20: identifier "SystemCoreClock" is undefined
+..\USER\bsp_SysTick.c:          if (SysTick_Config(SystemCoreClock/1000))       
+..\USER\bsp_SysTick.c:                             ^
+..\USER\bsp_SysTick.c(48): error:  #20: identifier "TimingDelay" is undefined
+..\USER\bsp_SysTick.c:          if (TimingDelay != 0x00)
+..\USER\bsp_SysTick.c:              ^
+..\USER\bsp_SysTick.c(54): error:  #20: identifier "TimingDelay" is undefined
+..\USER\bsp_SysTick.c:          TimingDelay = nTime;
+..\USER\bsp_SysTick.c:          ^
+..\USER\bsp_SysTick.c: ..\USER\bsp_SysTick.c: 0 warnings, 6 errors
+..\USER\bsp_SysTick.c - 6 Error(s), 0 Warning(s).
+compiling bsp_SysTick.c...
+..\USER\bsp_SysTick.c(36): error:  #20: identifier "SystemCoreClock" is undefined
+..\USER\bsp_SysTick.c:          if (SysTick_Config(SystemCoreClock/1000))       
+..\USER\bsp_SysTick.c:                             ^
+..\USER\bsp_SysTick.c: ..\USER\bsp_SysTick.c: 0 warnings, 1 error
+..\USER\bsp_SysTick.c - 1 Error(s), 0 Warning(s).
+compiling bsp_SysTick.c...
+..\USER\bsp_SysTick.c(36): error:  #20: identifier "SystemCoreClock" is undefined
+..\USER\bsp_SysTick.c:          if (SysTick_Config(SystemCoreClock/1000))       
+..\USER\bsp_SysTick.c:                             ^
+..\USER\bsp_SysTick.c: ..\USER\bsp_SysTick.c: 0 warnings, 1 error
+..\USER\bsp_SysTick.c - 1 Error(s), 0 Warning(s).
+compiling sys.c...
+..\SYSTEM\sys.c(19): error:  #1113: Inline assembler not permitted when generating Thumb code
+..\SYSTEM\sys.c:        __ASM volatile("wfi");            
+..\SYSTEM\sys.c:        ^
+..\SYSTEM\sys.c: ..\SYSTEM\sys.c: 0 warnings, 1 error
+..\SYSTEM\sys.c - 1 Error(s), 0 Warning(s).
+compiling sys.c...
+..\SYSTEM\sys.c(7): warning:  #223-D: function "NVIC_PriorityGroupConfig" declared implicitly
+..\SYSTEM\sys.c:       NVIC_PriorityGroupConfig(NVIC_PriorityGroup_2);
+..\SYSTEM\sys.c:       ^
+..\SYSTEM\sys.c(7): error:  #20: identifier "NVIC_PriorityGroup_2" is undefined
+..\SYSTEM\sys.c:       NVIC_PriorityGroupConfig(NVIC_PriorityGroup_2);
+..\SYSTEM\sys.c:                                ^
+..\SYSTEM\sys.c: ..\SYSTEM\sys.c: 1 warning, 1 error
+..\SYSTEM\sys.c - 1 Error(s), 1 Warning(s).
+compiling sys.c...
+..\SYSTEM\sys.c(7): warning:  #223-D: function "NVIC_PriorityGroupConfig" declared implicitly
+..\SYSTEM\sys.c:       NVIC_PriorityGroupConfig(NVIC_PriorityGroup_2);
+..\SYSTEM\sys.c:       ^
+..\SYSTEM\sys.c(7): error:  #20: identifier "NVIC_PriorityGroup_2" is undefined
+..\SYSTEM\sys.c:       NVIC_PriorityGroupConfig(NVIC_PriorityGroup_2);
+..\SYSTEM\sys.c:                                ^
+..\SYSTEM\sys.c: ..\SYSTEM\sys.c: 1 warning, 1 error
+..\SYSTEM\sys.c - 1 Error(s), 1 Warning(s).
+compiling bsp_SysTick.c...
+..\USER\bsp_SysTick.c(36): error:  #20: identifier "SystemCoreClock" is undefined
+..\USER\bsp_SysTick.c:          if (SysTick_Config(SystemCoreClock/1000))       
+..\USER\bsp_SysTick.c:                             ^
+..\USER\bsp_SysTick.c: ..\USER\bsp_SysTick.c: 0 warnings, 1 error
+..\USER\bsp_SysTick.c - 1 Error(s), 0 Warning(s).
+Build target 'DMAtest'
+compiling core_cm3.c...
+..\CORE\core_cm3.h(1502): error:  #20: identifier "IRQn_Type" is undefined
+..\CORE\core_cm3.h:   static __INLINE void NVIC_EnableIRQ(IRQn_Type IRQn)
+..\CORE\core_cm3.h:                                       ^
+..\CORE\core_cm3.h(1515): error:  #20: identifier "IRQn_Type" is undefined
+..\CORE\core_cm3.h:   static __INLINE void NVIC_DisableIRQ(IRQn_Type IRQn)
+..\CORE\core_cm3.h:                                        ^
+..\CORE\core_cm3.h(1529): error:  #20: identifier "IRQn_Type" is undefined
+..\CORE\core_cm3.h:   static __INLINE uint32_t NVIC_GetPendingIRQ(IRQn_Type IRQn)
+..\CORE\core_cm3.h:                                               ^
+..\CORE\core_cm3.h(1542): error:  #20: identifier "IRQn_Type" is undefined
+..\CORE\core_cm3.h:   static __INLINE void NVIC_SetPendingIRQ(IRQn_Type IRQn)
+..\CORE\core_cm3.h:                                           ^
+..\CORE\core_cm3.h(1555): error:  #20: identifier "IRQn_Type" is undefined
+..\CORE\core_cm3.h:   static __INLINE void NVIC_ClearPendingIRQ(IRQn_Type IRQn)
+..\CORE\core_cm3.h:                                             ^
+..\CORE\core_cm3.h(1569): error:  #20: identifier "IRQn_Type" is undefined
+..\CORE\core_cm3.h:   static __INLINE uint32_t NVIC_GetActive(IRQn_Type IRQn)
+..\CORE\core_cm3.h:                                           ^
+..\CORE\core_cm3.h(1586): error:  #20: identifier "IRQn_Type" is undefined
+..\CORE\core_cm3.h:   static __INLINE void NVIC_SetPriority(IRQn_Type IRQn, uint32_t priority)
+..\CORE\core_cm3.h:                                         ^
+..\CORE\core_cm3.h(1609): error:  #20: identifier "IRQn_Type" is undefined
+..\CORE\core_cm3.h:   static __INLINE uint32_t NVIC_GetPriority(IRQn_Type IRQn)
+..\CORE\core_cm3.h:                                             ^
+..\CORE\core_cm3.h(1699): error:  #20: identifier "SysTick_IRQn" is undefined
+..\CORE\core_cm3.h:     NVIC_SetPriority (SysTick_IRQn, (1<<__NVIC_PRIO_BITS) - 1);  /* set Priority for Cortex-M0 System Interrupts */
+..\CORE\core_cm3.h:                       ^
+..\CORE\core_cm3.h: ..\CORE\core_cm3.c: 0 warnings, 9 errors
+assembling startup_stm32f10x_hd.s...
+compiling misc.c...
+compiling stm32f10x_dma.c...
+compiling stm32f10x_rcc.c...
+compiling stm32f10x_tim.c...
+compiling stm32f10x_usart.c...
+compiling stm32f10x_gpio.c...
+compiling main.c...
+compiling stm32f10x_it.c...
+compiling system_stm32f10x.c...
+Target not created
+compiling main.c...
+..\USER\main.c - 0 Error(s), 0 Warning(s).
+Build target 'DMAtest'
+compiling core_cm3.c...
+..\CORE\core_cm3.h(1502): error:  #20: identifier "IRQn_Type" is undefined
+..\CORE\core_cm3.h:   static __INLINE void NVIC_EnableIRQ(IRQn_Type IRQn)
+..\CORE\core_cm3.h:                                       ^
+..\CORE\core_cm3.h(1515): error:  #20: identifier "IRQn_Type" is undefined
+..\CORE\core_cm3.h:   static __INLINE void NVIC_DisableIRQ(IRQn_Type IRQn)
+..\CORE\core_cm3.h:                                        ^
+..\CORE\core_cm3.h(1529): error:  #20: identifier "IRQn_Type" is undefined
+..\CORE\core_cm3.h:   static __INLINE uint32_t NVIC_GetPendingIRQ(IRQn_Type IRQn)
+..\CORE\core_cm3.h:                                               ^
+..\CORE\core_cm3.h(1542): error:  #20: identifier "IRQn_Type" is undefined
+..\CORE\core_cm3.h:   static __INLINE void NVIC_SetPendingIRQ(IRQn_Type IRQn)
+..\CORE\core_cm3.h:                                           ^
+..\CORE\core_cm3.h(1555): error:  #20: identifier "IRQn_Type" is undefined
+..\CORE\core_cm3.h:   static __INLINE void NVIC_ClearPendingIRQ(IRQn_Type IRQn)
+..\CORE\core_cm3.h:                                             ^
+..\CORE\core_cm3.h(1569): error:  #20: identifier "IRQn_Type" is undefined
+..\CORE\core_cm3.h:   static __INLINE uint32_t NVIC_GetActive(IRQn_Type IRQn)
+..\CORE\core_cm3.h:                                           ^
+..\CORE\core_cm3.h(1586): error:  #20: identifier "IRQn_Type" is undefined
+..\CORE\core_cm3.h:   static __INLINE void NVIC_SetPriority(IRQn_Type IRQn, uint32_t priority)
+..\CORE\core_cm3.h:                                         ^
+..\CORE\core_cm3.h(1609): error:  #20: identifier "IRQn_Type" is undefined
+..\CORE\core_cm3.h:   static __INLINE uint32_t NVIC_GetPriority(IRQn_Type IRQn)
+..\CORE\core_cm3.h:                                             ^
+..\CORE\core_cm3.h(1699): error:  #20: identifier "SysTick_IRQn" is undefined
+..\CORE\core_cm3.h:     NVIC_SetPriority (SysTick_IRQn, (1<<__NVIC_PRIO_BITS) - 1);  /* set Priority for Cortex-M0 System Interrupts */
+..\CORE\core_cm3.h:                       ^
+..\CORE\core_cm3.h: ..\CORE\core_cm3.c: 0 warnings, 9 errors
+Target not created
+compiling main.c...
+..\USER\main.c - 0 Error(s), 0 Warning(s).
+Build target 'DMAtest'
+compiling core_cm3.c...
+..\CORE\core_cm3.h(1502): error:  #20: identifier "IRQn_Type" is undefined
+..\CORE\core_cm3.h:   static __INLINE void NVIC_EnableIRQ(IRQn_Type IRQn)
+..\CORE\core_cm3.h:                                       ^
+..\CORE\core_cm3.h(1515): error:  #20: identifier "IRQn_Type" is undefined
+..\CORE\core_cm3.h:   static __INLINE void NVIC_DisableIRQ(IRQn_Type IRQn)
+..\CORE\core_cm3.h:                                        ^
+..\CORE\core_cm3.h(1529): error:  #20: identifier "IRQn_Type" is undefined
+..\CORE\core_cm3.h:   static __INLINE uint32_t NVIC_GetPendingIRQ(IRQn_Type IRQn)
+..\CORE\core_cm3.h:                                               ^
+..\CORE\core_cm3.h(1542): error:  #20: identifier "IRQn_Type" is undefined
+..\CORE\core_cm3.h:   static __INLINE void NVIC_SetPendingIRQ(IRQn_Type IRQn)
+..\CORE\core_cm3.h:                                           ^
+..\CORE\core_cm3.h(1555): error:  #20: identifier "IRQn_Type" is undefined
+..\CORE\core_cm3.h:   static __INLINE void NVIC_ClearPendingIRQ(IRQn_Type IRQn)
+..\CORE\core_cm3.h:                                             ^
+..\CORE\core_cm3.h(1569): error:  #20: identifier "IRQn_Type" is undefined
+..\CORE\core_cm3.h:   static __INLINE uint32_t NVIC_GetActive(IRQn_Type IRQn)
+..\CORE\core_cm3.h:                                           ^
+..\CORE\core_cm3.h(1586): error:  #20: identifier "IRQn_Type" is undefined
+..\CORE\core_cm3.h:   static __INLINE void NVIC_SetPriority(IRQn_Type IRQn, uint32_t priority)
+..\CORE\core_cm3.h:                                         ^
+..\CORE\core_cm3.h(1609): error:  #20: identifier "IRQn_Type" is undefined
+..\CORE\core_cm3.h:   static __INLINE uint32_t NVIC_GetPriority(IRQn_Type IRQn)
+..\CORE\core_cm3.h:                                             ^
+..\CORE\core_cm3.h(1699): error:  #20: identifier "SysTick_IRQn" is undefined
+..\CORE\core_cm3.h:     NVIC_SetPriority (SysTick_IRQn, (1<<__NVIC_PRIO_BITS) - 1);  /* set Priority for Cortex-M0 System Interrupts */
+..\CORE\core_cm3.h:                       ^
+..\CORE\core_cm3.h: ..\CORE\core_cm3.c: 0 warnings, 9 errors
+Target not created
+compiling core_cm3.c...
+..\CORE\core_cm3.c - 0 Error(s), 0 Warning(s).
+compiling main.c...
+..\USER\main.c - 0 Error(s), 0 Warning(s).
+compiling main.c...
+..\USER\main.c - 0 Error(s), 0 Warning(s).
+Build target 'DMAtest'
+linking...
+Program Size: Code=620 RO-data=336 RW-data=20 ZI-data=1028  
+FromELF: creating hex file...
+"..\OBJ\DMAtest.axf" - 0 Error(s), 0 Warning(s).
+Build target 'DMAtest'
+compiling core_cm3.c...
+assembling startup_stm32f10x_hd.s...
+compiling misc.c...
+compiling stm32f10x_dma.c...
+compiling stm32f10x_rcc.c...
+compiling stm32f10x_tim.c...
+compiling stm32f10x_usart.c...
+compiling stm32f10x_gpio.c...
+compiling main.c...
+compiling stm32f10x_it.c...
+compiling system_stm32f10x.c...
+linking...
+Program Size: Code=620 RO-data=336 RW-data=20 ZI-data=1028  
+FromELF: creating hex file...
+"..\OBJ\DMAtest.axf" - 0 Error(s), 0 Warning(s).
+compiling main.c...
+..\USER\main.c - 0 Error(s), 0 Warning(s).
+Build target 'DMAtest'
+compiling delay.c...
+..\SYSTEM\delay.c(133): warning:  #223-D: function "SysTick_CLKSourceConfig" declared implicitly
+..\SYSTEM\delay.c:      SysTick_CLKSourceConfig(SysTick_CLKSource_HCLK_Div8);   //选择外部时钟  HCLK/8
+..\SYSTEM\delay.c:      ^
+..\SYSTEM\delay.c(133): error:  #20: identifier "SysTick_CLKSource_HCLK_Div8" is undefined
+..\SYSTEM\delay.c:      SysTick_CLKSourceConfig(SysTick_CLKSource_HCLK_Div8);   //选择外部时钟  HCLK/8
+..\SYSTEM\delay.c:                              ^
+..\SYSTEM\delay.c(134): error:  #20: identifier "SystemCoreClock" is undefined
+..\SYSTEM\delay.c:      fac_us=SystemCoreClock/8000000;                         //为系统时钟的1/8  
+..\SYSTEM\delay.c:             ^
+..\SYSTEM\delay.c: ..\SYSTEM\delay.c: 1 warning, 2 errors
+compiling sys.c...
+..\SYSTEM\sys.c(5): warning:  #223-D: function "NVIC_PriorityGroupConfig" declared implicitly
+..\SYSTEM\sys.c:       NVIC_PriorityGroupConfig(NVIC_PriorityGroup_2);
+..\SYSTEM\sys.c:       ^
+..\SYSTEM\sys.c(5): error:  #20: identifier "NVIC_PriorityGroup_2" is undefined
+..\SYSTEM\sys.c:       NVIC_PriorityGroupConfig(NVIC_PriorityGroup_2);
+..\SYSTEM\sys.c:                                ^
+..\SYSTEM\sys.c: ..\SYSTEM\sys.c: 1 warning, 1 error
+compiling usart.c...
+..\SYSTEM\usart.c(48): error:  #260-D: explicit type is missing ("int" assumed)
+..\SYSTEM\usart.c:   _sys_exit(int x) 
+..\SYSTEM\usart.c:   ^
+..\SYSTEM\usart.c(92): error:  #20: identifier "USART_InitTypeDef" is undefined
+..\SYSTEM\usart.c:      USART_InitTypeDef USART_InitStructure;
+..\SYSTEM\usart.c:      ^
+..\SYSTEM\usart.c(93): error:  #20: identifier "NVIC_InitTypeDef" is undefined
+..\SYSTEM\usart.c:      NVIC_InitTypeDef NVIC_InitStructure;
+..\SYSTEM\usart.c:      ^
+..\SYSTEM\usart.c(113): warning:  #223-D: function "NVIC_Init" declared implicitly
+..\SYSTEM\usart.c:      NVIC_Init(&NVIC_InitStructure); //根据指定的参数初始化VIC寄存器
+..\SYSTEM\usart.c:      ^
+..\SYSTEM\usart.c(118): error:  #20: identifier "USART_WordLength_8b" is undefined
+..\SYSTEM\usart.c:      USART_InitStructure.USART_WordLength = USART_WordLength_8b;//字长为8位数据格式
+..\SYSTEM\usart.c:                                             ^
+..\SYSTEM\usart.c(119): error:  #20: identifier "USART_StopBits_1" is undefined
+..\SYSTEM\usart.c:      USART_InitStructure.USART_StopBits = USART_StopBits_1;//一个停止位
+..\SYSTEM\usart.c:                                           ^
+..\SYSTEM\usart.c(120): error:  #20: identifier "USART_Parity_No" is undefined
+..\SYSTEM\usart.c:      USART_InitStructure.USART_Parity = USART_Parity_No;//无奇偶校验位
+..\SYSTEM\usart.c:                                         ^
+..\SYSTEM\usart.c(121): error:  #20: identifier "USART_HardwareFlowControl_None" is undefined
+..\SYSTEM\usart.c:      USART_InitStructure.USART_HardwareFlowControl = USART_HardwareFlowControl_None;//无硬件数据流控制
+..\SYSTEM\usart.c:                                                      ^
+..\SYSTEM\usart.c(122): error:  #20: identifier "USART_Mode_Rx" is undefined
+..\SYSTEM\usart.c:      USART_InitStructure.USART_Mode = USART_Mode_Rx | USART_Mode_Tx; //收发模式
+..\SYSTEM\usart.c:                                       ^
+..\SYSTEM\usart.c(122): error:  #20: identifier "USART_Mode_Tx" is undefined
+..\SYSTEM\usart.c:      USART_InitStructure.USART_Mode = USART_Mode_Rx | USART_Mode_Tx; //收发模式
+..\SYSTEM\usart.c:                                                       ^
+..\SYSTEM\usart.c(124): warning:  #223-D: function "USART_Init" declared implicitly
+..\SYSTEM\usart.c:     USART_Init(USART1, &USART_InitStructure); //初始化串口1
+..\SYSTEM\usart.c:     ^
+..\SYSTEM\usart.c(125): warning:  #223-D: function "USART_ITConfig" declared implicitly
+..\SYSTEM\usart.c:     USART_ITConfig(USART1, USART_IT_RXNE, ENABLE);//开启串口接受中断
+..\SYSTEM\usart.c:     ^
+..\SYSTEM\usart.c(125): error:  #20: identifier "USART_IT_RXNE" is undefined
+..\SYSTEM\usart.c:     USART_ITConfig(USART1, USART_IT_RXNE, ENABLE);//开启串口接受中断
+..\SYSTEM\usart.c:                            ^
+..\SYSTEM\usart.c(126): warning:  #223-D: function "USART_Cmd" declared implicitly
+..\SYSTEM\usart.c:     USART_Cmd(USART1, ENABLE);                    //使能串口1 
+..\SYSTEM\usart.c:     ^
+..\SYSTEM\usart.c(136): warning:  #223-D: function "USART_GetITStatus" declared implicitly
+..\SYSTEM\usart.c:      if(USART_GetITStatus(USART1, USART_IT_RXNE) != RESET)  //接收中断(接收到的数据必须是0x0d 0x0a结尾)
+..\SYSTEM\usart.c:         ^
+..\SYSTEM\usart.c(136): error:  #20: identifier "USART_IT_RXNE" is undefined
+..\SYSTEM\usart.c:      if(USART_GetITStatus(USART1, USART_IT_RXNE) != RESET)  //接收中断(接收到的数据必须是0x0d 0x0a结尾)
+..\SYSTEM\usart.c:                                   ^
+..\SYSTEM\usart.c(138): warning:  #223-D: function "USART_ReceiveData" declared implicitly
+..\SYSTEM\usart.c:              Res =USART_ReceiveData(USART1); //读取接收到的数据
+..\SYSTEM\usart.c:                   ^
+..\SYSTEM\usart.c: ..\SYSTEM\usart.c: 6 warnings, 11 errors
+Target not created
+compiling delay.c...
+..\SYSTEM\delay.h(4): error:  #13: expected a file name
+..\SYSTEM\delay.h:   #include  
+..\SYSTEM\delay.h:             ^
+..\SYSTEM\delay.h: ..\SYSTEM\delay.c: 0 warnings, 1 error
+..\SYSTEM\delay.c - 1 Error(s), 0 Warning(s).
+Build target 'DMAtest'
+compiling core_cm3.c...
+assembling startup_stm32f10x_hd.s...
+compiling misc.c...
+compiling stm32f10x_dma.c...
+compiling stm32f10x_rcc.c...
+compiling stm32f10x_tim.c...
+compiling stm32f10x_usart.c...
+compiling stm32f10x_gpio.c...
+compiling main.c...
+compiling stm32f10x_it.c...
+compiling system_stm32f10x.c...
+compiling delay.c...
+..\SYSTEM\delay.c(135): warning:  #223-D: function "SysTick_CLKSourceConfig" declared implicitly
+..\SYSTEM\delay.c:      SysTick_CLKSourceConfig(SysTick_CLKSource_HCLK_Div8);   //选择外部时钟  HCLK/8
+..\SYSTEM\delay.c:      ^
+..\SYSTEM\delay.c(135): error:  #20: identifier "SysTick_CLKSource_HCLK_Div8" is undefined
+..\SYSTEM\delay.c:      SysTick_CLKSourceConfig(SysTick_CLKSource_HCLK_Div8);   //选择外部时钟  HCLK/8
+..\SYSTEM\delay.c:                              ^
+..\SYSTEM\delay.c(136): error:  #20: identifier "SystemCoreClock" is undefined
+..\SYSTEM\delay.c:      fac_us=SystemCoreClock/8000000;                         //为系统时钟的1/8  
+..\SYSTEM\delay.c:             ^
+..\SYSTEM\delay.c: ..\SYSTEM\delay.c: 1 warning, 2 errors
+compiling sys.c...
+..\SYSTEM\sys.c(5): warning:  #223-D: function "NVIC_PriorityGroupConfig" declared implicitly
+..\SYSTEM\sys.c:       NVIC_PriorityGroupConfig(NVIC_PriorityGroup_2);
+..\SYSTEM\sys.c:       ^
+..\SYSTEM\sys.c(5): error:  #20: identifier "NVIC_PriorityGroup_2" is undefined
+..\SYSTEM\sys.c:       NVIC_PriorityGroupConfig(NVIC_PriorityGroup_2);
+..\SYSTEM\sys.c:                                ^
+..\SYSTEM\sys.c: ..\SYSTEM\sys.c: 1 warning, 1 error
+compiling usart.c...
+..\SYSTEM\usart.c(48): error:  #260-D: explicit type is missing ("int" assumed)
+..\SYSTEM\usart.c:   _sys_exit(int x) 
+..\SYSTEM\usart.c:   ^
+..\SYSTEM\usart.c(92): error:  #20: identifier "USART_InitTypeDef" is undefined
+..\SYSTEM\usart.c:      USART_InitTypeDef USART_InitStructure;
+..\SYSTEM\usart.c:      ^
+..\SYSTEM\usart.c(93): error:  #20: identifier "NVIC_InitTypeDef" is undefined
+..\SYSTEM\usart.c:      NVIC_InitTypeDef NVIC_InitStructure;
+..\SYSTEM\usart.c:      ^
+..\SYSTEM\usart.c(113): warning:  #223-D: function "NVIC_Init" declared implicitly
+..\SYSTEM\usart.c:      NVIC_Init(&NVIC_InitStructure); //根据指定的参数初始化VIC寄存器
+..\SYSTEM\usart.c:      ^
+..\SYSTEM\usart.c(118): error:  #20: identifier "USART_WordLength_8b" is undefined
+..\SYSTEM\usart.c:      USART_InitStructure.USART_WordLength = USART_WordLength_8b;//字长为8位数据格式
+..\SYSTEM\usart.c:                                             ^
+..\SYSTEM\usart.c(119): error:  #20: identifier "USART_StopBits_1" is undefined
+..\SYSTEM\usart.c:      USART_InitStructure.USART_StopBits = USART_StopBits_1;//一个停止位
+..\SYSTEM\usart.c:                                           ^
+..\SYSTEM\usart.c(120): error:  #20: identifier "USART_Parity_No" is undefined
+..\SYSTEM\usart.c:      USART_InitStructure.USART_Parity = USART_Parity_No;//无奇偶校验位
+..\SYSTEM\usart.c:                                         ^
+..\SYSTEM\usart.c(121): error:  #20: identifier "USART_HardwareFlowControl_None" is undefined
+..\SYSTEM\usart.c:      USART_InitStructure.USART_HardwareFlowControl = USART_HardwareFlowControl_None;//无硬件数据流控制
+..\SYSTEM\usart.c:                                                      ^
+..\SYSTEM\usart.c(122): error:  #20: identifier "USART_Mode_Rx" is undefined
+..\SYSTEM\usart.c:      USART_InitStructure.USART_Mode = USART_Mode_Rx | USART_Mode_Tx; //收发模式
+..\SYSTEM\usart.c:                                       ^
+..\SYSTEM\usart.c(122): error:  #20: identifier "USART_Mode_Tx" is undefined
+..\SYSTEM\usart.c:      USART_InitStructure.USART_Mode = USART_Mode_Rx | USART_Mode_Tx; //收发模式
+..\SYSTEM\usart.c:                                                       ^
+..\SYSTEM\usart.c(124): warning:  #223-D: function "USART_Init" declared implicitly
+..\SYSTEM\usart.c:     USART_Init(USART1, &USART_InitStructure); //初始化串口1
+..\SYSTEM\usart.c:     ^
+..\SYSTEM\usart.c(125): warning:  #223-D: function "USART_ITConfig" declared implicitly
+..\SYSTEM\usart.c:     USART_ITConfig(USART1, USART_IT_RXNE, ENABLE);//开启串口接受中断
+..\SYSTEM\usart.c:     ^
+..\SYSTEM\usart.c(125): error:  #20: identifier "USART_IT_RXNE" is undefined
+..\SYSTEM\usart.c:     USART_ITConfig(USART1, USART_IT_RXNE, ENABLE);//开启串口接受中断
+..\SYSTEM\usart.c:                            ^
+..\SYSTEM\usart.c(126): warning:  #223-D: function "USART_Cmd" declared implicitly
+..\SYSTEM\usart.c:     USART_Cmd(USART1, ENABLE);                    //使能串口1 
+..\SYSTEM\usart.c:     ^
+..\SYSTEM\usart.c(136): warning:  #223-D: function "USART_GetITStatus" declared implicitly
+..\SYSTEM\usart.c:      if(USART_GetITStatus(USART1, USART_IT_RXNE) != RESET)  //接收中断(接收到的数据必须是0x0d 0x0a结尾)
+..\SYSTEM\usart.c:         ^
+..\SYSTEM\usart.c(136): error:  #20: identifier "USART_IT_RXNE" is undefined
+..\SYSTEM\usart.c:      if(USART_GetITStatus(USART1, USART_IT_RXNE) != RESET)  //接收中断(接收到的数据必须是0x0d 0x0a结尾)
+..\SYSTEM\usart.c:                                   ^
+..\SYSTEM\usart.c(138): warning:  #223-D: function "USART_ReceiveData" declared implicitly
+..\SYSTEM\usart.c:              Res =USART_ReceiveData(USART1); //读取接收到的数据
+..\SYSTEM\usart.c:                   ^
+..\SYSTEM\usart.c: ..\SYSTEM\usart.c: 6 warnings, 11 errors
+Target not created
+compiling usart.c...
+..\SYSTEM\usart.c(48): error:  #260-D: explicit type is missing ("int" assumed)
+..\SYSTEM\usart.c:   _sys_exit(int x) 
+..\SYSTEM\usart.c:   ^
+..\SYSTEM\usart.c(92): error:  #20: identifier "USART_InitTypeDef" is undefined
+..\SYSTEM\usart.c:      USART_InitTypeDef USART_InitStructure;
+..\SYSTEM\usart.c:      ^
+..\SYSTEM\usart.c(93): error:  #20: identifier "NVIC_InitTypeDef" is undefined
+..\SYSTEM\usart.c:      NVIC_InitTypeDef NVIC_InitStructure;
+..\SYSTEM\usart.c:      ^
+..\SYSTEM\usart.c(113): warning:  #223-D: function "NVIC_Init" declared implicitly
+..\SYSTEM\usart.c:      NVIC_Init(&NVIC_InitStructure); //根据指定的参数初始化VIC寄存器
+..\SYSTEM\usart.c:      ^
+..\SYSTEM\usart.c(118): error:  #20: identifier "USART_WordLength_8b" is undefined
+..\SYSTEM\usart.c:      USART_InitStructure.USART_WordLength = USART_WordLength_8b;//字长为8位数据格式
+..\SYSTEM\usart.c:                                             ^
+..\SYSTEM\usart.c(119): error:  #20: identifier "USART_StopBits_1" is undefined
+..\SYSTEM\usart.c:      USART_InitStructure.USART_StopBits = USART_StopBits_1;//一个停止位
+..\SYSTEM\usart.c:                                           ^
+..\SYSTEM\usart.c(120): error:  #20: identifier "USART_Parity_No" is undefined
+..\SYSTEM\usart.c:      USART_InitStructure.USART_Parity = USART_Parity_No;//无奇偶校验位
+..\SYSTEM\usart.c:                                         ^
+..\SYSTEM\usart.c(121): error:  #20: identifier "USART_HardwareFlowControl_None" is undefined
+..\SYSTEM\usart.c:      USART_InitStructure.USART_HardwareFlowControl = USART_HardwareFlowControl_None;//无硬件数据流控制
+..\SYSTEM\usart.c:                                                      ^
+..\SYSTEM\usart.c(122): error:  #20: identifier "USART_Mode_Rx" is undefined
+..\SYSTEM\usart.c:      USART_InitStructure.USART_Mode = USART_Mode_Rx | USART_Mode_Tx; //收发模式
+..\SYSTEM\usart.c:                                       ^
+..\SYSTEM\usart.c(122): error:  #20: identifier "USART_Mode_Tx" is undefined
+..\SYSTEM\usart.c:      USART_InitStructure.USART_Mode = USART_Mode_Rx | USART_Mode_Tx; //收发模式
+..\SYSTEM\usart.c:                                                       ^
+..\SYSTEM\usart.c(124): warning:  #223-D: function "USART_Init" declared implicitly
+..\SYSTEM\usart.c:     USART_Init(USART1, &USART_InitStructure); //初始化串口1
+..\SYSTEM\usart.c:     ^
+..\SYSTEM\usart.c(125): warning:  #223-D: function "USART_ITConfig" declared implicitly
+..\SYSTEM\usart.c:     USART_ITConfig(USART1, USART_IT_RXNE, ENABLE);//开启串口接受中断
+..\SYSTEM\usart.c:     ^
+..\SYSTEM\usart.c(125): error:  #20: identifier "USART_IT_RXNE" is undefined
+..\SYSTEM\usart.c:     USART_ITConfig(USART1, USART_IT_RXNE, ENABLE);//开启串口接受中断
+..\SYSTEM\usart.c:                            ^
+..\SYSTEM\usart.c(126): warning:  #223-D: function "USART_Cmd" declared implicitly
+..\SYSTEM\usart.c:     USART_Cmd(USART1, ENABLE);                    //使能串口1 
+..\SYSTEM\usart.c:     ^
+..\SYSTEM\usart.c(136): warning:  #223-D: function "USART_GetITStatus" declared implicitly
+..\SYSTEM\usart.c:      if(USART_GetITStatus(USART1, USART_IT_RXNE) != RESET)  //接收中断(接收到的数据必须是0x0d 0x0a结尾)
+..\SYSTEM\usart.c:         ^
+..\SYSTEM\usart.c(136): error:  #20: identifier "USART_IT_RXNE" is undefined
+..\SYSTEM\usart.c:      if(USART_GetITStatus(USART1, USART_IT_RXNE) != RESET)  //接收中断(接收到的数据必须是0x0d 0x0a结尾)
+..\SYSTEM\usart.c:                                   ^
+..\SYSTEM\usart.c(138): warning:  #223-D: function "USART_ReceiveData" declared implicitly
+..\SYSTEM\usart.c:              Res =USART_ReceiveData(USART1); //读取接收到的数据
+..\SYSTEM\usart.c:                   ^
+..\SYSTEM\usart.c: ..\SYSTEM\usart.c: 6 warnings, 11 errors
+..\SYSTEM\usart.c - 11 Error(s), 6 Warning(s).
+compiling sys.c...
+..\SYSTEM\sys.c(5): warning:  #223-D: function "NVIC_PriorityGroupConfig" declared implicitly
+..\SYSTEM\sys.c:       NVIC_PriorityGroupConfig(NVIC_PriorityGroup_2);
+..\SYSTEM\sys.c:       ^
+..\SYSTEM\sys.c(5): error:  #20: identifier "NVIC_PriorityGroup_2" is undefined
+..\SYSTEM\sys.c:       NVIC_PriorityGroupConfig(NVIC_PriorityGroup_2);
+..\SYSTEM\sys.c:                                ^
+..\SYSTEM\sys.c: ..\SYSTEM\sys.c: 1 warning, 1 error
+..\SYSTEM\sys.c - 1 Error(s), 1 Warning(s).
+compiling bsp_SysTick.c...
+..\USER\bsp_SysTick.c(36): error:  #20: identifier "SystemCoreClock" is undefined
+..\USER\bsp_SysTick.c:          if (SysTick_Config(SystemCoreClock/1000))       
+..\USER\bsp_SysTick.c:                             ^
+..\USER\bsp_SysTick.c: ..\USER\bsp_SysTick.c: 0 warnings, 1 error
+..\USER\bsp_SysTick.c - 1 Error(s), 0 Warning(s).
+compiling core_cm3.c...
+..\CORE\core_cm3.c - 0 Error(s), 0 Warning(s).
+compiling bsp_SysTick.c...
+..\USER\bsp_SysTick.c(36): error:  #20: identifier "SystemCoreClock" is undefined
+..\USER\bsp_SysTick.c:          if (SysTick_Config(SystemCoreClock/1000))       
+..\USER\bsp_SysTick.c:                             ^
+..\USER\bsp_SysTick.c: ..\USER\bsp_SysTick.c: 0 warnings, 1 error
+..\USER\bsp_SysTick.c - 1 Error(s), 0 Warning(s).
+Build target 'DMAtest'
+compiling core_cm3.c...
+assembling startup_stm32f10x_hd.s...
+compiling misc.c...
+compiling stm32f10x_dma.c...
+compiling stm32f10x_rcc.c...
+compiling stm32f10x_tim.c...
+compiling stm32f10x_usart.c...
+compiling stm32f10x_gpio.c...
+compiling main.c...
+compiling stm32f10x_it.c...
+compiling system_stm32f10x.c...
+compiling bsp_SysTick.c...
+..\USER\bsp_SysTick.c(36): error:  #20: identifier "SystemCoreClock" is undefined
+..\USER\bsp_SysTick.c:          if (SysTick_Config(SystemCoreClock/1000))       
+..\USER\bsp_SysTick.c:                             ^
+..\USER\bsp_SysTick.c: ..\USER\bsp_SysTick.c: 0 warnings, 1 error
+Target not created
+Build target 'DMAtest'
+compiling core_cm3.c...
+assembling startup_stm32f10x_hd.s...
+compiling misc.c...
+compiling stm32f10x_dma.c...
+compiling stm32f10x_rcc.c...
+compiling stm32f10x_tim.c...
+compiling stm32f10x_usart.c...
+compiling stm32f10x_gpio.c...
+compiling stm32f10x_adc.c...
+compiling stm32f10x_bkp.c...
+compiling stm32f10x_can.c...
+compiling stm32f10x_cec.c...
+compiling stm32f10x_crc.c...
+compiling stm32f10x_dac.c...
+compiling stm32f10x_dbgmcu.c...
+compiling stm32f10x_exti.c...
+compiling stm32f10x_flash.c...
+compiling stm32f10x_fsmc.c...
+compiling stm32f10x_i2c.c...
+compiling stm32f10x_iwdg.c...
+compiling stm32f10x_pwr.c...
+compiling stm32f10x_rtc.c...
+compiling stm32f10x_sdio.c...
+compiling stm32f10x_spi.c...
+compiling stm32f10x_wwdg.c...
+compiling main.c...
+compiling stm32f10x_it.c...
+compiling system_stm32f10x.c...
+compiling bsp_SysTick.c...
+..\USER\bsp_SysTick.c(36): error:  #20: identifier "SystemCoreClock" is undefined
+..\USER\bsp_SysTick.c:          if (SysTick_Config(SystemCoreClock/1000))       
+..\USER\bsp_SysTick.c:                             ^
+..\USER\bsp_SysTick.c: ..\USER\bsp_SysTick.c: 0 warnings, 1 error
+Target not created
+Build target 'DMAtest'
+compiling core_cm3.c...
+assembling startup_stm32f10x_hd.s...
+compiling misc.c...
+compiling stm32f10x_dma.c...
+compiling stm32f10x_rcc.c...
+compiling stm32f10x_tim.c...
+compiling stm32f10x_usart.c...
+compiling stm32f10x_gpio.c...
+compiling main.c...
+compiling stm32f10x_it.c...
+compiling system_stm32f10x.c...
+compiling bsp_SysTick.c...
+..\USER\bsp_SysTick.c(36): error:  #20: identifier "SystemCoreClock" is undefined
+..\USER\bsp_SysTick.c:          if (SysTick_Config(SystemCoreClock/1000))       
+..\USER\bsp_SysTick.c:                             ^
+..\USER\bsp_SysTick.c: ..\USER\bsp_SysTick.c: 0 warnings, 1 error
+Target not created
+compiling delay.c...
+..\SYSTEM\delay.c(137): error:  #20: identifier "SystemCoreClock" is undefined
+..\SYSTEM\delay.c:      fac_us=SystemCoreClock/8000000;                         //为系统时钟的1/8  
+..\SYSTEM\delay.c:             ^
+..\SYSTEM\delay.c: ..\SYSTEM\delay.c: 0 warnings, 1 error
+..\SYSTEM\delay.c - 1 Error(s), 0 Warning(s).
+compiling delay.c...
+..\SYSTEM\delay.c(136): warning:  #223-D: function "SysTick_CLKSourceConfig" declared implicitly
+..\SYSTEM\delay.c:      SysTick_CLKSourceConfig(SysTick_CLKSource_HCLK_Div8);   //选择外部时钟  HCLK/8
+..\SYSTEM\delay.c:      ^
+..\SYSTEM\delay.c(136): error:  #20: identifier "SysTick_CLKSource_HCLK_Div8" is undefined
+..\SYSTEM\delay.c:      SysTick_CLKSourceConfig(SysTick_CLKSource_HCLK_Div8);   //选择外部时钟  HCLK/8
+..\SYSTEM\delay.c:                              ^
+..\SYSTEM\delay.c(137): error:  #20: identifier "SystemCoreClock" is undefined
+..\SYSTEM\delay.c:      fac_us=SystemCoreClock/8000000;                         //为系统时钟的1/8  
+..\SYSTEM\delay.c:             ^
+..\SYSTEM\delay.c: ..\SYSTEM\delay.c: 1 warning, 2 errors
+..\SYSTEM\delay.c - 2 Error(s), 1 Warning(s).
+compiling delay.c...
+..\SYSTEM\delay.c(137): error:  #20: identifier "SystemCoreClock" is undefined
+..\SYSTEM\delay.c:      fac_us=SystemCoreClock/8000000;                         //为系统时钟的1/8  
+..\SYSTEM\delay.c:             ^
+..\SYSTEM\delay.c: ..\SYSTEM\delay.c: 0 warnings, 1 error
+..\SYSTEM\delay.c - 1 Error(s), 0 Warning(s).
+compiling sys.c...
+..\SYSTEM\sys.c(5): warning:  #223-D: function "NVIC_PriorityGroupConfig" declared implicitly
+..\SYSTEM\sys.c:       NVIC_PriorityGroupConfig(NVIC_PriorityGroup_2);
+..\SYSTEM\sys.c:       ^
+..\SYSTEM\sys.c(5): error:  #20: identifier "NVIC_PriorityGroup_2" is undefined
+..\SYSTEM\sys.c:       NVIC_PriorityGroupConfig(NVIC_PriorityGroup_2);
+..\SYSTEM\sys.c:                                ^
+..\SYSTEM\sys.c: ..\SYSTEM\sys.c: 1 warning, 1 error
+..\SYSTEM\sys.c - 1 Error(s), 1 Warning(s).
+compiling delay.c...
+..\SYSTEM\delay.c(137): error:  #20: identifier "SystemCoreClock" is undefined
+..\SYSTEM\delay.c:      fac_us=SystemCoreClock/8000000;                         //为系统时钟的1/8  
+..\SYSTEM\delay.c:             ^
+..\SYSTEM\delay.c: ..\SYSTEM\delay.c: 0 warnings, 1 error
+..\SYSTEM\delay.c - 1 Error(s), 0 Warning(s).
+compiling delay.c...
+..\SYSTEM\delay.c(137): error:  #20: identifier "SystemCoreClock" is undefined
+..\SYSTEM\delay.c:      fac_us=SystemCoreClock/8000000;                         //为系统时钟的1/8  
+..\SYSTEM\delay.c:             ^
+..\SYSTEM\delay.c: ..\SYSTEM\delay.c: 0 warnings, 1 error
+..\SYSTEM\delay.c - 1 Error(s), 0 Warning(s).
+compiling sys.c...
+..\SYSTEM\sys.c - 0 Error(s), 0 Warning(s).
+compiling usart.c...
+..\SYSTEM\usart.c(52): error:  #260-D: explicit type is missing ("int" assumed)
+..\SYSTEM\usart.c:   _sys_exit(int x) 
+..\SYSTEM\usart.c:   ^
+..\SYSTEM\usart.c(96): error:  #20: identifier "USART_InitTypeDef" is undefined
+..\SYSTEM\usart.c:      USART_InitTypeDef USART_InitStructure;
+..\SYSTEM\usart.c:      ^
+..\SYSTEM\usart.c(97): error:  #20: identifier "NVIC_InitTypeDef" is undefined
+..\SYSTEM\usart.c:      NVIC_InitTypeDef NVIC_InitStructure;
+..\SYSTEM\usart.c:      ^
+..\SYSTEM\usart.c(117): warning:  #223-D: function "NVIC_Init" declared implicitly
+..\SYSTEM\usart.c:      NVIC_Init(&NVIC_InitStructure); //根据指定的参数初始化VIC寄存器
+..\SYSTEM\usart.c:      ^
+..\SYSTEM\usart.c(122): error:  #20: identifier "USART_WordLength_8b" is undefined
+..\SYSTEM\usart.c:      USART_InitStructure.USART_WordLength = USART_WordLength_8b;//字长为8位数据格式
+..\SYSTEM\usart.c:                                             ^
+..\SYSTEM\usart.c(123): error:  #20: identifier "USART_StopBits_1" is undefined
+..\SYSTEM\usart.c:      USART_InitStructure.USART_StopBits = USART_StopBits_1;//一个停止位
+..\SYSTEM\usart.c:                                           ^
+..\SYSTEM\usart.c(124): error:  #20: identifier "USART_Parity_No" is undefined
+..\SYSTEM\usart.c:      USART_InitStructure.USART_Parity = USART_Parity_No;//无奇偶校验位
+..\SYSTEM\usart.c:                                         ^
+..\SYSTEM\usart.c(125): error:  #20: identifier "USART_HardwareFlowControl_None" is undefined
+..\SYSTEM\usart.c:      USART_InitStructure.USART_HardwareFlowControl = USART_HardwareFlowControl_None;//无硬件数据流控制
+..\SYSTEM\usart.c:                                                      ^
+..\SYSTEM\usart.c(126): error:  #20: identifier "USART_Mode_Rx" is undefined
+..\SYSTEM\usart.c:      USART_InitStructure.USART_Mode = USART_Mode_Rx | USART_Mode_Tx; //收发模式
+..\SYSTEM\usart.c:                                       ^
+..\SYSTEM\usart.c(126): error:  #20: identifier "USART_Mode_Tx" is undefined
+..\SYSTEM\usart.c:      USART_InitStructure.USART_Mode = USART_Mode_Rx | USART_Mode_Tx; //收发模式
+..\SYSTEM\usart.c:                                                       ^
+..\SYSTEM\usart.c(128): warning:  #223-D: function "USART_Init" declared implicitly
+..\SYSTEM\usart.c:     USART_Init(USART1, &USART_InitStructure); //初始化串口1
+..\SYSTEM\usart.c:     ^
+..\SYSTEM\usart.c(129): warning:  #223-D: function "USART_ITConfig" declared implicitly
+..\SYSTEM\usart.c:     USART_ITConfig(USART1, USART_IT_RXNE, ENABLE);//开启串口接受中断
+..\SYSTEM\usart.c:     ^
+..\SYSTEM\usart.c(129): error:  #20: identifier "USART_IT_RXNE" is undefined
+..\SYSTEM\usart.c:     USART_ITConfig(USART1, USART_IT_RXNE, ENABLE);//开启串口接受中断
+..\SYSTEM\usart.c:                            ^
+..\SYSTEM\usart.c(130): warning:  #223-D: function "USART_Cmd" declared implicitly
+..\SYSTEM\usart.c:     USART_Cmd(USART1, ENABLE);                    //使能串口1 
+..\SYSTEM\usart.c:     ^
+..\SYSTEM\usart.c(140): warning:  #223-D: function "USART_GetITStatus" declared implicitly
+..\SYSTEM\usart.c:      if(USART_GetITStatus(USART1, USART_IT_RXNE) != RESET)  //接收中断(接收到的数据必须是0x0d 0x0a结尾)
+..\SYSTEM\usart.c:         ^
+..\SYSTEM\usart.c(140): error:  #20: identifier "USART_IT_RXNE" is undefined
+..\SYSTEM\usart.c:      if(USART_GetITStatus(USART1, USART_IT_RXNE) != RESET)  //接收中断(接收到的数据必须是0x0d 0x0a结尾)
+..\SYSTEM\usart.c:                                   ^
+..\SYSTEM\usart.c(142): warning:  #223-D: function "USART_ReceiveData" declared implicitly
+..\SYSTEM\usart.c:              Res =USART_ReceiveData(USART1); //读取接收到的数据
+..\SYSTEM\usart.c:                   ^
+..\SYSTEM\usart.c: ..\SYSTEM\usart.c: 6 warnings, 11 errors
+..\SYSTEM\usart.c - 11 Error(s), 6 Warning(s).
+compiling usart.c...
+..\SYSTEM\usart.c(54): error:  #260-D: explicit type is missing ("int" assumed)
+..\SYSTEM\usart.c:   _sys_exit(int x) 
+..\SYSTEM\usart.c:   ^
+..\SYSTEM\usart.c(98): error:  #20: identifier "USART_InitTypeDef" is undefined
+..\SYSTEM\usart.c:      USART_InitTypeDef USART_InitStructure;
+..\SYSTEM\usart.c:      ^
+..\SYSTEM\usart.c(99): error:  #20: identifier "NVIC_InitTypeDef" is undefined
+..\SYSTEM\usart.c:      NVIC_InitTypeDef NVIC_InitStructure;
+..\SYSTEM\usart.c:      ^
+..\SYSTEM\usart.c(119): warning:  #223-D: function "NVIC_Init" declared implicitly
+..\SYSTEM\usart.c:      NVIC_Init(&NVIC_InitStructure); //根据指定的参数初始化VIC寄存器
+..\SYSTEM\usart.c:      ^
+..\SYSTEM\usart.c(124): error:  #20: identifier "USART_WordLength_8b" is undefined
+..\SYSTEM\usart.c:      USART_InitStructure.USART_WordLength = USART_WordLength_8b;//字长为8位数据格式
+..\SYSTEM\usart.c:                                             ^
+..\SYSTEM\usart.c(125): error:  #20: identifier "USART_StopBits_1" is undefined
+..\SYSTEM\usart.c:      USART_InitStructure.USART_StopBits = USART_StopBits_1;//一个停止位
+..\SYSTEM\usart.c:                                           ^
+..\SYSTEM\usart.c(126): error:  #20: identifier "USART_Parity_No" is undefined
+..\SYSTEM\usart.c:      USART_InitStructure.USART_Parity = USART_Parity_No;//无奇偶校验位
+..\SYSTEM\usart.c:                                         ^
+..\SYSTEM\usart.c(127): error:  #20: identifier "USART_HardwareFlowControl_None" is undefined
+..\SYSTEM\usart.c:      USART_InitStructure.USART_HardwareFlowControl = USART_HardwareFlowControl_None;//无硬件数据流控制
+..\SYSTEM\usart.c:                                                      ^
+..\SYSTEM\usart.c(128): error:  #20: identifier "USART_Mode_Rx" is undefined
+..\SYSTEM\usart.c:      USART_InitStructure.USART_Mode = USART_Mode_Rx | USART_Mode_Tx; //收发模式
+..\SYSTEM\usart.c:                                       ^
+..\SYSTEM\usart.c(128): error:  #20: identifier "USART_Mode_Tx" is undefined
+..\SYSTEM\usart.c:      USART_InitStructure.USART_Mode = USART_Mode_Rx | USART_Mode_Tx; //收发模式
+..\SYSTEM\usart.c:                                                       ^
+..\SYSTEM\usart.c(130): warning:  #223-D: function "USART_Init" declared implicitly
+..\SYSTEM\usart.c:     USART_Init(USART1, &USART_InitStructure); //初始化串口1
+..\SYSTEM\usart.c:     ^
+..\SYSTEM\usart.c(131): warning:  #223-D: function "USART_ITConfig" declared implicitly
+..\SYSTEM\usart.c:     USART_ITConfig(USART1, USART_IT_RXNE, ENABLE);//开启串口接受中断
+..\SYSTEM\usart.c:     ^
+..\SYSTEM\usart.c(131): error:  #20: identifier "USART_IT_RXNE" is undefined
+..\SYSTEM\usart.c:     USART_ITConfig(USART1, USART_IT_RXNE, ENABLE);//开启串口接受中断
+..\SYSTEM\usart.c:                            ^
+..\SYSTEM\usart.c(132): warning:  #223-D: function "USART_Cmd" declared implicitly
+..\SYSTEM\usart.c:     USART_Cmd(USART1, ENABLE);                    //使能串口1 
+..\SYSTEM\usart.c:     ^
+..\SYSTEM\usart.c(142): warning:  #223-D: function "USART_GetITStatus" declared implicitly
+..\SYSTEM\usart.c:      if(USART_GetITStatus(USART1, USART_IT_RXNE) != RESET)  //接收中断(接收到的数据必须是0x0d 0x0a结尾)
+..\SYSTEM\usart.c:         ^
+..\SYSTEM\usart.c(142): error:  #20: identifier "USART_IT_RXNE" is undefined
+..\SYSTEM\usart.c:      if(USART_GetITStatus(USART1, USART_IT_RXNE) != RESET)  //接收中断(接收到的数据必须是0x0d 0x0a结尾)
+..\SYSTEM\usart.c:                                   ^
+..\SYSTEM\usart.c(144): warning:  #223-D: function "USART_ReceiveData" declared implicitly
+..\SYSTEM\usart.c:              Res =USART_ReceiveData(USART1); //读取接收到的数据
+..\SYSTEM\usart.c:                   ^
+..\SYSTEM\usart.c: ..\SYSTEM\usart.c: 6 warnings, 11 errors
+..\SYSTEM\usart.c - 11 Error(s), 6 Warning(s).
+compiling usart.c...
+..\SYSTEM\usart.c(54): error:  #260-D: explicit type is missing ("int" assumed)
+..\SYSTEM\usart.c:   _sys_exit(int x) 
+..\SYSTEM\usart.c:   ^
+..\SYSTEM\usart.c(98): error:  #20: identifier "USART_InitTypeDef" is undefined
+..\SYSTEM\usart.c:      USART_InitTypeDef USART_InitStructure;
+..\SYSTEM\usart.c:      ^
+..\SYSTEM\usart.c(124): error:  #20: identifier "USART_WordLength_8b" is undefined
+..\SYSTEM\usart.c:      USART_InitStructure.USART_WordLength = USART_WordLength_8b;//字长为8位数据格式
+..\SYSTEM\usart.c:                                             ^
+..\SYSTEM\usart.c(125): error:  #20: identifier "USART_StopBits_1" is undefined
+..\SYSTEM\usart.c:      USART_InitStructure.USART_StopBits = USART_StopBits_1;//一个停止位
+..\SYSTEM\usart.c:                                           ^
+..\SYSTEM\usart.c(126): error:  #20: identifier "USART_Parity_No" is undefined
+..\SYSTEM\usart.c:      USART_InitStructure.USART_Parity = USART_Parity_No;//无奇偶校验位
+..\SYSTEM\usart.c:                                         ^
+..\SYSTEM\usart.c(127): error:  #20: identifier "USART_HardwareFlowControl_None" is undefined
+..\SYSTEM\usart.c:      USART_InitStructure.USART_HardwareFlowControl = USART_HardwareFlowControl_None;//无硬件数据流控制
+..\SYSTEM\usart.c:                                                      ^
+..\SYSTEM\usart.c(128): error:  #20: identifier "USART_Mode_Rx" is undefined
+..\SYSTEM\usart.c:      USART_InitStructure.USART_Mode = USART_Mode_Rx | USART_Mode_Tx; //收发模式
+..\SYSTEM\usart.c:                                       ^
+..\SYSTEM\usart.c(128): error:  #20: identifier "USART_Mode_Tx" is undefined
+..\SYSTEM\usart.c:      USART_InitStructure.USART_Mode = USART_Mode_Rx | USART_Mode_Tx; //收发模式
+..\SYSTEM\usart.c:                                                       ^
+..\SYSTEM\usart.c(130): warning:  #223-D: function "USART_Init" declared implicitly
+..\SYSTEM\usart.c:     USART_Init(USART1, &USART_InitStructure); //初始化串口1
+..\SYSTEM\usart.c:     ^
+..\SYSTEM\usart.c(131): warning:  #223-D: function "USART_ITConfig" declared implicitly
+..\SYSTEM\usart.c:     USART_ITConfig(USART1, USART_IT_RXNE, ENABLE);//开启串口接受中断
+..\SYSTEM\usart.c:     ^
+..\SYSTEM\usart.c(131): error:  #20: identifier "USART_IT_RXNE" is undefined
+..\SYSTEM\usart.c:     USART_ITConfig(USART1, USART_IT_RXNE, ENABLE);//开启串口接受中断
+..\SYSTEM\usart.c:                            ^
+..\SYSTEM\usart.c(132): warning:  #223-D: function "USART_Cmd" declared implicitly
+..\SYSTEM\usart.c:     USART_Cmd(USART1, ENABLE);                    //使能串口1 
+..\SYSTEM\usart.c:     ^
+..\SYSTEM\usart.c(142): warning:  #223-D: function "USART_GetITStatus" declared implicitly
+..\SYSTEM\usart.c:      if(USART_GetITStatus(USART1, USART_IT_RXNE) != RESET)  //接收中断(接收到的数据必须是0x0d 0x0a结尾)
+..\SYSTEM\usart.c:         ^
+..\SYSTEM\usart.c(142): error:  #20: identifier "USART_IT_RXNE" is undefined
+..\SYSTEM\usart.c:      if(USART_GetITStatus(USART1, USART_IT_RXNE) != RESET)  //接收中断(接收到的数据必须是0x0d 0x0a结尾)
+..\SYSTEM\usart.c:                                   ^
+..\SYSTEM\usart.c(144): warning:  #223-D: function "USART_ReceiveData" declared implicitly
+..\SYSTEM\usart.c:              Res =USART_ReceiveData(USART1); //读取接收到的数据
+..\SYSTEM\usart.c:                   ^
+..\SYSTEM\usart.c: ..\SYSTEM\usart.c: 5 warnings, 10 errors
+..\SYSTEM\usart.c - 10 Error(s), 5 Warning(s).
+compiling usart.c...
+..\SYSTEM\usart.c(54): error:  #260-D: explicit type is missing ("int" assumed)
+..\SYSTEM\usart.c:   _sys_exit(int x) 
+..\SYSTEM\usart.c:   ^
+..\SYSTEM\usart.c: ..\SYSTEM\usart.c: 0 warnings, 1 error
+..\SYSTEM\usart.c - 1 Error(s), 0 Warning(s).
+compiling usart.c...
+..\SYSTEM\usart.c(54): error:  #260-D: explicit type is missing ("int" assumed)
+..\SYSTEM\usart.c:   _sys_exit(int x) 
+..\SYSTEM\usart.c:   ^
+..\SYSTEM\usart.c: ..\SYSTEM\usart.c: 0 warnings, 1 error
+..\SYSTEM\usart.c - 1 Error(s), 0 Warning(s).
+compiling usart.c...
+..\SYSTEM\usart.c - 0 Error(s), 0 Warning(s).
+compiling sys.c...
+..\SYSTEM\sys.c - 0 Error(s), 0 Warning(s).
+compiling delay.c...
+..\SYSTEM\delay.c(137): error:  #20: identifier "SystemCoreClock" is undefined
+..\SYSTEM\delay.c:      fac_us=SystemCoreClock/8000000;                         //为系统时钟的1/8  
+..\SYSTEM\delay.c:             ^
+..\SYSTEM\delay.c: ..\SYSTEM\delay.c: 0 warnings, 1 error
+..\SYSTEM\delay.c - 1 Error(s), 0 Warning(s).
+compiling delay.c...
+..\SYSTEM\delay.c(138): error:  #20: identifier "SystemCoreClock" is undefined
+..\SYSTEM\delay.c:      fac_us=SystemCoreClock/8000000;                         //为系统时钟的1/8  
+..\SYSTEM\delay.c:             ^
+..\SYSTEM\delay.c: ..\SYSTEM\delay.c: 0 warnings, 1 error
+..\SYSTEM\delay.c - 1 Error(s), 0 Warning(s).
+compiling delay.c...
+..\SYSTEM\delay.c(138): error:  #20: identifier "SystemCoreClock" is undefined
+..\SYSTEM\delay.c:      fac_us=SystemCoreClock/8000000;                         //为系统时钟的1/8  
+..\SYSTEM\delay.c:             ^
+..\SYSTEM\delay.c: ..\SYSTEM\delay.c: 0 warnings, 1 error
+..\SYSTEM\delay.c - 1 Error(s), 0 Warning(s).
+compiling system_stm32f10x.c...
+..\USER\system_stm32f10x.c - 0 Error(s), 0 Warning(s).
+compiling delay.c...
+..\SYSTEM\delay.c - 0 Error(s), 0 Warning(s).
+compiling delay.c...
+..\SYSTEM\delay.c - 0 Error(s), 0 Warning(s).
+Build target 'DMAtest'
+compiling core_cm3.c...
+assembling startup_stm32f10x_hd.s...
+compiling misc.c...
+compiling stm32f10x_dma.c...
+compiling stm32f10x_rcc.c...
+compiling stm32f10x_tim.c...
+compiling stm32f10x_usart.c...
+compiling stm32f10x_gpio.c...
+compiling main.c...
+compiling stm32f10x_it.c...
+compiling system_stm32f10x.c...
+compiling delay.c...
+compiling sys.c...
+compiling usart.c...
+linking...
+Program Size: Code=4008 RO-data=336 RW-data=48 ZI-data=1224  
+FromELF: creating hex file...
+"..\OBJ\DMAtest.axf" - 0 Error(s), 0 Warning(s).
+compiling sys.c...
+..\SYSTEM\sys.c(6): warning:  #223-D: function "NVIC_PriorityGroupConfig" declared implicitly
+..\SYSTEM\sys.c:       NVIC_PriorityGroupConfig(NVIC_PriorityGroup_2);
+..\SYSTEM\sys.c:       ^
+..\SYSTEM\sys.c(6): error:  #20: identifier "NVIC_PriorityGroup_2" is undefined
+..\SYSTEM\sys.c:       NVIC_PriorityGroupConfig(NVIC_PriorityGroup_2);
+..\SYSTEM\sys.c:                                ^
+..\SYSTEM\sys.c: ..\SYSTEM\sys.c: 1 warning, 1 error
+..\SYSTEM\sys.c - 1 Error(s), 1 Warning(s).
+compiling sys.c...
+..\SYSTEM\sys.c - 0 Error(s), 0 Warning(s).
+compiling usart.c...
+..\SYSTEM\usart.c - 0 Error(s), 0 Warning(s).
+Build target 'DMAtest'
+compiling core_cm3.c...
+assembling startup_stm32f10x_hd.s...
+compiling misc.c...
+compiling stm32f10x_dma.c...
+compiling stm32f10x_rcc.c...
+compiling stm32f10x_tim.c...
+compiling stm32f10x_usart.c...
+compiling stm32f10x_gpio.c...
+compiling main.c...
+..\USER\main.c(76): warning:  #223-D: function "delay_init" declared implicitly
+..\USER\main.c:       delay_init();
+..\USER\main.c:       ^
+..\USER\main.c(77): warning:  #223-D: function "NVIC_Configuration" declared implicitly
+..\USER\main.c:       NVIC_Configuration();
+..\USER\main.c:       ^
+..\USER\main.c(78): warning:  #223-D: function "uart_init" declared implicitly
+..\USER\main.c:       uart_init(9600);
+..\USER\main.c:       ^
+..\USER\main.c(80): warning:  #223-D: function "GPIO_Configuration" declared implicitly
+..\USER\main.c:       GPIO_Configuration();
+..\USER\main.c:       ^
+..\USER\main.c(83): warning:  #223-D: function "delay_ms" declared implicitly
+..\USER\main.c:           delay_ms(500);
+..\USER\main.c:           ^
+..\USER\main.c(85): warning:  #223-D: function "printf" declared implicitly
+..\USER\main.c:           printf("hello world!\r\n");
+..\USER\main.c:           ^
+..\USER\main.c: ..\USER\main.c: 6 warnings, 0 errors
+compiling stm32f10x_it.c...
+compiling system_stm32f10x.c...
+compiling delay.c...
+compiling sys.c...
+compiling usart.c...
+linking...
+..\OBJ\DMAtest.axf: Error: L6218E: Undefined symbol GPIO_Configuration (referred from main.o).
+..\OBJ\DMAtest.axf: Not enough information to list image symbols.
+..\OBJ\DMAtest.axf: Finished: 1 information, 0 warning and 1 error messages.
+Target not created
+Build target 'DMAtest'
+compiling core_cm3.c...
+assembling startup_stm32f10x_hd.s...
+compiling misc.c...
+compiling stm32f10x_dma.c...
+compiling stm32f10x_rcc.c...
+compiling stm32f10x_tim.c...
+compiling stm32f10x_usart.c...
+compiling stm32f10x_gpio.c...
+compiling main.c...
+..\USER\main.c(76): warning:  #223-D: function "delay_init" declared implicitly
+..\USER\main.c:       delay_init();
+..\USER\main.c:       ^
+..\USER\main.c(77): warning:  #223-D: function "NVIC_Configuration" declared implicitly
+..\USER\main.c:       NVIC_Configuration();
+..\USER\main.c:       ^
+..\USER\main.c(78): warning:  #223-D: function "uart_init" declared implicitly
+..\USER\main.c:       uart_init(9600);
+..\USER\main.c:       ^
+..\USER\main.c(83): warning:  #223-D: function "delay_ms" declared implicitly
+..\USER\main.c:           delay_ms(500);
+..\USER\main.c:           ^
+..\USER\main.c(85): warning:  #223-D: function "printf" declared implicitly
+..\USER\main.c:           printf("hello world!\r\n");
+..\USER\main.c:           ^
+..\USER\main.c: ..\USER\main.c: 5 warnings, 0 errors
+compiling stm32f10x_it.c...
+compiling system_stm32f10x.c...
+compiling delay.c...
+compiling sys.c...
+compiling usart.c...
+linking...
+Program Size: Code=4312 RO-data=336 RW-data=52 ZI-data=1228  
+FromELF: creating hex file...
+"..\OBJ\DMAtest.axf" - 0 Error(s), 5 Warning(s).
+Build target 'DMAtest'
+compiling core_cm3.c...
+assembling startup_stm32f10x_hd.s...
+compiling misc.c...
+compiling stm32f10x_dma.c...
+compiling stm32f10x_rcc.c...
+compiling stm32f10x_tim.c...
+compiling stm32f10x_usart.c...
+compiling stm32f10x_gpio.c...
+compiling main.c...
+..\USER\main.c(76): warning:  #223-D: function "NVIC_Configuration" declared implicitly
+..\USER\main.c:       NVIC_Configuration();
+..\USER\main.c:       ^
+..\USER\main.c: ..\USER\main.c: 1 warning, 0 errors
+compiling stm32f10x_it.c...
+compiling system_stm32f10x.c...
+compiling delay.c...
+compiling sys.c...
+compiling usart.c...
+linking...
+Program Size: Code=4312 RO-data=336 RW-data=52 ZI-data=1228  
+FromELF: creating hex file...
+"..\OBJ\DMAtest.axf" - 0 Error(s), 1 Warning(s).
+Build target 'DMAtest'
+compiling core_cm3.c...
+assembling startup_stm32f10x_hd.s...
+compiling misc.c...
+compiling stm32f10x_dma.c...
+compiling stm32f10x_rcc.c...
+compiling stm32f10x_tim.c...
+compiling stm32f10x_usart.c...
+compiling stm32f10x_gpio.c...
+compiling main.c...
+compiling stm32f10x_it.c...
+compiling system_stm32f10x.c...
+compiling delay.c...
+compiling sys.c...
+compiling usart.c...
+linking...
+Program Size: Code=4312 RO-data=336 RW-data=52 ZI-data=1228  
+FromELF: creating hex file...
+"..\OBJ\DMAtest.axf" - 0 Error(s), 0 Warning(s).
+compiling dma.c...
+..\USER\dma.h(1): error:  #37: the #endif for this directive is missing
+..\USER\dma.h:   #ifndef _DMA_H_ 
+..\USER\dma.h:    ^
+..\USER\dma.c(3): error:  #20: identifier "DMA_InitTypeDef" is undefined
+..\USER\dma.c:   DMA_InitTypeDef DMA_InitStructure;
+..\USER\dma.c:   ^
+..\USER\dma.c(4): error:  #20: identifier "u16" is undefined
+..\USER\dma.c:   u16 DMA1_MEM_LEN;
+..\USER\dma.c:   ^
+..\USER\dma.c(7): error:  #20: identifier "DMA_Channel_TypeDef" is undefined
+..\USER\dma.c:   void MYDMA_Config(DMA_Channel_TypeDef* DMA_CHx,u32 cpar,u32 cmar,u16 cndtr)
+..\USER\dma.c:                     ^
+..\USER\dma.c(7): error:  #20: identifier "u32" is undefined
+..\USER\dma.c:   void MYDMA_Config(DMA_Channel_TypeDef* DMA_CHx,u32 cpar,u32 cmar,u16 cndtr)
+..\USER\dma.c:                                                  ^
+..\USER\dma.c(7): error:  #20: identifier "u32" is undefined
+..\USER\dma.c:   void MYDMA_Config(DMA_Channel_TypeDef* DMA_CHx,u32 cpar,u32 cmar,u16 cndtr)
+..\USER\dma.c:                                                           ^
+..\USER\dma.c(7): error:  #20: identifier "u16" is undefined
+..\USER\dma.c:   void MYDMA_Config(DMA_Channel_TypeDef* DMA_CHx,u32 cpar,u32 cmar,u16 cndtr)
+..\USER\dma.c:                                                                    ^
+..\USER\dma.c(12): error:  #20: identifier "DMA_Channel_TypeDef" is undefined
+..\USER\dma.c:   void MYDMA_Enable(DMA_Channel_TypeDef*DMA_CHx)
+..\USER\dma.c:                     ^
+..\USER\dma.c: ..\USER\dma.c: 0 warnings, 8 errors
+..\USER\dma.c - 8 Error(s), 0 Warning(s).
+compiling dma.c...
+..\USER\dma.h(6): error:  #20: identifier "DMA_Channel_TypeDef" is undefined
+..\USER\dma.h:   void MYDMA_Config(DMA_Channel_TypeDef* DMA_CHx,u32 cpar,u32 cmar,u16 cndtr);
+..\USER\dma.h:                     ^
+..\USER\dma.h(6): error:  #20: identifier "u32" is undefined
+..\USER\dma.h:   void MYDMA_Config(DMA_Channel_TypeDef* DMA_CHx,u32 cpar,u32 cmar,u16 cndtr);
+..\USER\dma.h:                                                  ^
+..\USER\dma.h(6): error:  #20: identifier "u32" is undefined
+..\USER\dma.h:   void MYDMA_Config(DMA_Channel_TypeDef* DMA_CHx,u32 cpar,u32 cmar,u16 cndtr);
+..\USER\dma.h:                                                           ^
+..\USER\dma.h(6): error:  #20: identifier "u16" is undefined
+..\USER\dma.h:   void MYDMA_Config(DMA_Channel_TypeDef* DMA_CHx,u32 cpar,u32 cmar,u16 cndtr);
+..\USER\dma.h:                                                                    ^
+..\USER\dma.h(7): error:  #20: identifier "DMA_Channel_TypeDef" is undefined
+..\USER\dma.h:   void MYDMA_Enable(DMA_Channel_TypeDef*DMA_CHx);
+..\USER\dma.h:                     ^
+..\USER\dma.h(1): error:  #37: the #endif for this directive is missing
+..\USER\dma.h:   #ifndef _DMA_H_ 
+..\USER\dma.h:    ^
+..\USER\dma.h: ..\USER\dma.c: 0 warnings, 6 errors
+..\USER\dma.c - 6 Error(s), 0 Warning(s).
+compiling dma.c...
+..\USER\dma.h(1): error:  #37: the #endif for this directive is missing
+..\USER\dma.h:   #ifndef _DMA_H_ 
+..\USER\dma.h:    ^
+..\USER\dma.h: ..\USER\dma.c: 0 warnings, 1 error
+..\USER\dma.c - 1 Error(s), 0 Warning(s).
+compiling dma.c...
+..\USER\dma.c - 0 Error(s), 0 Warning(s).
+compiling dma.c...
+..\USER\dma.c(11): error:  #20: identifier "DMA1_MEN_LEN" is undefined
+..\USER\dma.c:        DMA1_MEN_LEN=cndtr;
+..\USER\dma.c:        ^
+..\USER\dma.c: ..\USER\dma.c: 0 warnings, 1 error
+..\USER\dma.c - 1 Error(s), 0 Warning(s).
+compiling dma.c...
+..\USER\dma.c - 0 Error(s), 0 Warning(s).
+compiling dma.c...
+..\USER\dma.c - 0 Error(s), 0 Warning(s).
+compiling main.c...
+..\USER\main.c(74): error:  #20: identifier "BUFF_SIZE" is undefined
+..\USER\main.c:   u8 SendBuff[BUFF_SIZE];
+..\USER\main.c:               ^
+..\USER\main.c(89): warning:  #223-D: function "USART_DMACmd" declared implicitly
+..\USER\main.c:           USART_DMACmd(USART1,USART_DMAReq_Tx,ENABLE);//使能串口1的DMA发送
+..\USER\main.c:           ^
+..\USER\main.c(89): error:  #20: identifier "USART_DMAReq_Tx" is undefined
+..\USER\main.c:           USART_DMACmd(USART1,USART_DMAReq_Tx,ENABLE);//使能串口1的DMA发送
+..\USER\main.c:                               ^
+..\USER\main.c: ..\USER\main.c: 1 warning, 2 errors
+..\USER\main.c - 2 Error(s), 1 Warning(s).
+compiling main.c...
+..\USER\main.c(83): error:  #20: identifier "SendBuff" is undefined
+..\USER\main.c:       MYDMA_Config(DMA1_Channel4,(u32)&USART1->DR,(u32)SendBuff, 29);
+..\USER\main.c:                                                        ^
+..\USER\main.c(90): warning:  #223-D: function "USART_DMACmd" declared implicitly
+..\USER\main.c:           USART_DMACmd(USART1,USART_DMAReq_Tx,ENABLE);//使能串口1的DMA发送
+..\USER\main.c:           ^
+..\USER\main.c(90): error:  #20: identifier "USART_DMAReq_Tx" is undefined
+..\USER\main.c:           USART_DMACmd(USART1,USART_DMAReq_Tx,ENABLE);//使能串口1的DMA发送
+..\USER\main.c:                               ^
+..\USER\main.c: ..\USER\main.c: 1 warning, 2 errors
+..\USER\main.c - 2 Error(s), 1 Warning(s).
+compiling main.c...
+..\USER\main.c(90): warning:  #223-D: function "USART_DMACmd" declared implicitly
+..\USER\main.c:           USART_DMACmd(USART1,USART_DMAReq_Tx,ENABLE);//使能串口1的DMA发送
+..\USER\main.c:           ^
+..\USER\main.c(90): error:  #20: identifier "USART_DMAReq_Tx" is undefined
+..\USER\main.c:           USART_DMACmd(USART1,USART_DMAReq_Tx,ENABLE);//使能串口1的DMA发送
+..\USER\main.c:                               ^
+..\USER\main.c: ..\USER\main.c: 1 warning, 1 error
+..\USER\main.c - 1 Error(s), 1 Warning(s).
+compiling main.c...
+..\USER\main.c - 0 Error(s), 0 Warning(s).
+Build target 'DMAtest'
+linking...
+Program Size: Code=5014 RO-data=366 RW-data=56 ZI-data=1272  
+FromELF: creating hex file...
+"..\OBJ\DMAtest.axf" - 0 Error(s), 0 Warning(s).
+compiling main.c...
+..\USER\main.c - 0 Error(s), 0 Warning(s).
+Build target 'DMAtest'
+compiling usart.c...
+linking...
+Program Size: Code=5014 RO-data=366 RW-data=56 ZI-data=1272  
+FromELF: creating hex file...
+"..\OBJ\DMAtest.axf" - 0 Error(s), 0 Warning(s).
+Build target 'DMAtest'
+compiling core_cm3.c...
+assembling startup_stm32f10x_hd.s...
+compiling misc.c...
+compiling stm32f10x_dma.c...
+compiling stm32f10x_rcc.c...
+compiling stm32f10x_tim.c...
+compiling stm32f10x_usart.c...
+compiling stm32f10x_gpio.c...
+compiling main.c...
+compiling stm32f10x_it.c...
+compiling system_stm32f10x.c...
+compiling dma.c...
+compiling delay.c...
+compiling sys.c...
+compiling usart.c...
+linking...
+Program Size: Code=5014 RO-data=366 RW-data=56 ZI-data=1272  
+FromELF: creating hex file...
+"..\OBJ\DMAtest.axf" - 0 Error(s), 0 Warning(s).
+Load "..\\OBJ\\DMAtest.AXF" 
+Set JLink Project File to "D:\keil_workspace\STM32Project\DMAtest\PRJ\JLinkSettings.ini"
+ 
+JLink info:
+------------
+DLL: V4.15n, compiled Jun 18 2010 19:55:09
+Firmware: J-Link ARM V8 compiled Jul 17 2014 12:31:18
+Hardware: V8.00
+S/N : 17935099 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash 
+ 
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+ROMTableAddr = 0xE00FF003
+ 
+Target info:
+------------
+Device: STM32F103VE
+VTarget = 3.261V
+State of Pins: 
+TCK: 1, TDI: 0, TDO: 0, TMS: 0, TRES: 1, TRST: 1
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Hardware-Breakpoints: 6
+Software-Breakpoints: 2048
+Watchpoints:          4
+JTAG speed: 2000 kHz
+ 
+Erase Done.
+Programming Done.
+Verify OK.
+Build target 'DMAtest'
+compiling core_cm3.c...
+assembling startup_stm32f10x_hd.s...
+compiling misc.c...
+compiling stm32f10x_dma.c...
+compiling stm32f10x_rcc.c...
+compiling stm32f10x_tim.c...
+compiling stm32f10x_usart.c...
+compiling stm32f10x_gpio.c...
+compiling main.c...
+compiling stm32f10x_it.c...
+compiling system_stm32f10x.c...
+compiling dma.c...
+compiling delay.c...
+compiling sys.c...
+compiling usart.c...
+linking...
+Program Size: Code=5022 RO-data=366 RW-data=56 ZI-data=1272  
+FromELF: creating hex file...
+"..\OBJ\DMAtest.axf" - 0 Error(s), 0 Warning(s).
+Load "..\\OBJ\\DMAtest.AXF" 
+Set JLink Project File to "D:\keil_workspace\STM32Project\DMAtest\PRJ\JLinkSettings.ini"
+ 
+JLink info:
+------------
+DLL: V4.15n, compiled Jun 18 2010 19:55:09
+Firmware: J-Link ARM V8 compiled Jul 17 2014 12:31:18
+Hardware: V8.00
+S/N : 17935099 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash 
+ 
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+ROMTableAddr = 0xE00FF003
+ 
+Target info:
+------------
+Device: STM32F103VE
+VTarget = 3.267V
+State of Pins: 
+TCK: 1, TDI: 0, TDO: 0, TMS: 0, TRES: 1, TRST: 1
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Hardware-Breakpoints: 6
+Software-Breakpoints: 2048
+Watchpoints:          4
+JTAG speed: 2000 kHz
+ 
+Erase Done.
+Programming Done.
+Verify OK.
+compiling bsp_ov7725.c...
+..\USER\bsp_ov7725.c(11): error:  #5: cannot open source input file "./ov7725/bsp_ov7725.h": No such file or directory
+..\USER\bsp_ov7725.c:   #include "./ov7725/bsp_ov7725.h"
+..\USER\bsp_ov7725.c:                                   ^
+..\USER\bsp_ov7725.c: ..\USER\bsp_ov7725.c: 0 warnings, 1 error
+..\USER\bsp_ov7725.c - 1 Error(s), 0 Warning(s).
+compiling bsp_ov7725.c...
+..\USER\bsp_ov7725.c(11): error:  #5: cannot open source input file ".bsp_ov7725.h": No such file or directory
+..\USER\bsp_ov7725.c:   #include ".bsp_ov7725.h"
+..\USER\bsp_ov7725.c:                           ^
+..\USER\bsp_ov7725.c: ..\USER\bsp_ov7725.c: 0 warnings, 1 error
+..\USER\bsp_ov7725.c - 1 Error(s), 0 Warning(s).
+compiling bsp_ov7725.c...
+..\USER\bsp_ov7725.c(274): error:  #20: identifier "EXTI_InitTypeDef" is undefined
+..\USER\bsp_ov7725.c:               EXTI_InitTypeDef EXTI_InitStructure;
+..\USER\bsp_ov7725.c:               ^
+..\USER\bsp_ov7725.c(275): error:  #20: identifier "NVIC_InitTypeDef" is undefined
+..\USER\bsp_ov7725.c:                   NVIC_InitTypeDef NVIC_InitStructure;
+..\USER\bsp_ov7725.c:                   ^
+..\USER\bsp_ov7725.c(288): error:  #20: identifier "EXTI_Line5" is undefined
+..\USER\bsp_ov7725.c:           EXTI_InitStructure.EXTI_Line = OV7725_VSYNC_EXTI_LINE;
+..\USER\bsp_ov7725.c:                                          ^
+..\USER\bsp_ov7725.c(289): error:  #20: identifier "EXTI_Mode_Interrupt" is undefined
+..\USER\bsp_ov7725.c:           EXTI_InitStructure.EXTI_Mode = EXTI_Mode_Interrupt;
+..\USER\bsp_ov7725.c:                                          ^
+..\USER\bsp_ov7725.c(290): error:  #20: identifier "EXTI_Trigger_Falling" is undefined
+..\USER\bsp_ov7725.c:                   EXTI_InitStructure.EXTI_Trigger = EXTI_Trigger_Falling ; 
+..\USER\bsp_ov7725.c:                                                     ^
+..\USER\bsp_ov7725.c(292): warning:  #223-D: function "EXTI_Init" declared implicitly
+..\USER\bsp_ov7725.c:           EXTI_Init(&EXTI_InitStructure);
+..\USER\bsp_ov7725.c:           ^
+..\USER\bsp_ov7725.c(293): warning:  #223-D: function "EXTI_GenerateSWInterrupt" declared implicitly
+..\USER\bsp_ov7725.c:           EXTI_GenerateSWInterrupt(OV7725_VSYNC_EXTI_LINE);               
+..\USER\bsp_ov7725.c:           ^
+..\USER\bsp_ov7725.c(296): warning:  #223-D: function "NVIC_PriorityGroupConfig" declared implicitly
+..\USER\bsp_ov7725.c:           NVIC_PriorityGroupConfig(NVIC_PriorityGroup_1);
+..\USER\bsp_ov7725.c:           ^
+..\USER\bsp_ov7725.c(296): error:  #20: identifier "NVIC_PriorityGroup_1" is undefined
+..\USER\bsp_ov7725.c:           NVIC_PriorityGroupConfig(NVIC_PriorityGroup_1);
+..\USER\bsp_ov7725.c:                                    ^
+..\USER\bsp_ov7725.c(301): warning:  #223-D: function "NVIC_Init" declared implicitly
+..\USER\bsp_ov7725.c:           NVIC_Init(&NVIC_InitStructure);
+..\USER\bsp_ov7725.c:           ^
+..\USER\bsp_ov7725.c: ..\USER\bsp_ov7725.c: 4 warnings, 6 errors
+..\USER\bsp_ov7725.c - 6 Error(s), 4 Warning(s).
+compiling stm32f10x_exti.c...
+..\STM32F10x_FWLib\src\stm32f10x_exti.c - 0 Error(s), 0 Warning(s).
+compiling bsp_ov7725.c...
+..\USER\bsp_ov7725.c(276): error:  #20: identifier "NVIC_InitTypeDef" is undefined
+..\USER\bsp_ov7725.c:                   NVIC_InitTypeDef NVIC_InitStructure;
+..\USER\bsp_ov7725.c:                   ^
+..\USER\bsp_ov7725.c(297): warning:  #223-D: function "NVIC_PriorityGroupConfig" declared implicitly
+..\USER\bsp_ov7725.c:           NVIC_PriorityGroupConfig(NVIC_PriorityGroup_1);
+..\USER\bsp_ov7725.c:           ^
+..\USER\bsp_ov7725.c(297): error:  #20: identifier "NVIC_PriorityGroup_1" is undefined
+..\USER\bsp_ov7725.c:           NVIC_PriorityGroupConfig(NVIC_PriorityGroup_1);
+..\USER\bsp_ov7725.c:                                    ^
+..\USER\bsp_ov7725.c(302): warning:  #223-D: function "NVIC_Init" declared implicitly
+..\USER\bsp_ov7725.c:           NVIC_Init(&NVIC_InitStructure);
+..\USER\bsp_ov7725.c:           ^
+..\USER\bsp_ov7725.c: ..\USER\bsp_ov7725.c: 2 warnings, 2 errors
+..\USER\bsp_ov7725.c - 2 Error(s), 2 Warning(s).
+compiling bsp_ov7725.c...
+..\USER\bsp_ov7725.c(16): error:  #5: cannot open source input file "../STM32F10x_FWLib/inc/stm32f10x_map.h": No such file or directory
+..\USER\bsp_ov7725.c:   #include "../STM32F10x_FWLib/inc/stm32f10x_map.h"
+..\USER\bsp_ov7725.c:                                                    ^
+..\USER\bsp_ov7725.c: ..\USER\bsp_ov7725.c: 0 warnings, 1 error
+..\USER\bsp_ov7725.c - 1 Error(s), 0 Warning(s).
+compiling bsp_ov7725.c...
+..\USER\bsp_ov7725.c(277): error:  #20: identifier "NVIC_InitTypeDef" is undefined
+..\USER\bsp_ov7725.c:                   NVIC_InitTypeDef NVIC_InitStructure;
+..\USER\bsp_ov7725.c:                   ^
+..\USER\bsp_ov7725.c(298): warning:  #223-D: function "NVIC_PriorityGroupConfig" declared implicitly
+..\USER\bsp_ov7725.c:           NVIC_PriorityGroupConfig(NVIC_PriorityGroup_1);
+..\USER\bsp_ov7725.c:           ^
+..\USER\bsp_ov7725.c(298): error:  #20: identifier "NVIC_PriorityGroup_1" is undefined
+..\USER\bsp_ov7725.c:           NVIC_PriorityGroupConfig(NVIC_PriorityGroup_1);
+..\USER\bsp_ov7725.c:                                    ^
+..\USER\bsp_ov7725.c(303): warning:  #223-D: function "NVIC_Init" declared implicitly
+..\USER\bsp_ov7725.c:           NVIC_Init(&NVIC_InitStructure);
+..\USER\bsp_ov7725.c:           ^
+..\USER\bsp_ov7725.c: ..\USER\bsp_ov7725.c: 2 warnings, 2 errors
+..\USER\bsp_ov7725.c - 2 Error(s), 2 Warning(s).
+compiling bsp_ov7725.c...
+..\USER\bsp_ov7725.c - 0 Error(s), 0 Warning(s).
+Build target 'DMAtest'
+compiling main.c...
+compiling bsp_sccb.c...
+linking...
+Program Size: Code=5022 RO-data=366 RW-data=56 ZI-data=1272  
+FromELF: creating hex file...
+"..\OBJ\DMAtest.axf" - 0 Error(s), 0 Warning(s).
+compiling bsp_sccb.c...
+..\USER\bsp_sccb.c - 0 Error(s), 0 Warning(s).
+Build target 'DMAtest'
+linking...
+Program Size: Code=5022 RO-data=366 RW-data=56 ZI-data=1272  
+FromELF: creating hex file...
+"..\OBJ\DMAtest.axf" - 0 Error(s), 0 Warning(s).
+Build target 'DMAtest'
+compiling core_cm3.c...
+assembling startup_stm32f10x_hd.s...
+compiling misc.c...
+compiling stm32f10x_dma.c...
+compiling stm32f10x_rcc.c...
+compiling stm32f10x_tim.c...
+compiling stm32f10x_usart.c...
+compiling stm32f10x_gpio.c...
+compiling stm32f10x_exti.c...
+compiling main.c...
+compiling stm32f10x_it.c...
+compiling system_stm32f10x.c...
+compiling dma.c...
+compiling bsp_ov7725.c...
+compiling bsp_sccb.c...
+compiling delay.c...
+compiling sys.c...
+compiling usart.c...
+linking...
+Program Size: Code=5022 RO-data=366 RW-data=56 ZI-data=1272  
+FromELF: creating hex file...
+"..\OBJ\DMAtest.axf" - 0 Error(s), 0 Warning(s).
+compiling stm32f10x_it.c...
+..\USER\stm32f10x_it.c(160): warning:  #223-D: function "EXTI_GetITStatus" declared implicitly
+..\USER\stm32f10x_it.c:       if ( EXTI_GetITStatus(OV7725_VSYNC_EXTI_LINE) != RESET )  //检查EXTI_Line0线路上的中断请求是否发送到了NVIC 
+..\USER\stm32f10x_it.c:            ^
+..\USER\stm32f10x_it.c(160): error:  #20: identifier "EXTI_Line5" is undefined
+..\USER\stm32f10x_it.c:       if ( EXTI_GetITStatus(OV7725_VSYNC_EXTI_LINE) != RESET )  //检查EXTI_Line0线路上的中断请求是否发送到了NVIC 
+..\USER\stm32f10x_it.c:                             ^
+..\USER\stm32f10x_it.c(179): warning:  #223-D: function "EXTI_ClearITPendingBit" declared implicitly
+..\USER\stm32f10x_it.c:           EXTI_ClearITPendingBit(OV7725_VSYNC_EXTI_LINE);       //清除EXTI_Line0线路挂起标志位        
+..\USER\stm32f10x_it.c:           ^
+..\USER\stm32f10x_it.c: ..\USER\stm32f10x_it.c: 2 warnings, 1 error
+..\USER\stm32f10x_it.c - 1 Error(s), 2 Warning(s).
+compiling stm32f10x_it.c...
+..\USER\stm32f10x_it.c - 0 Error(s), 0 Warning(s).
+compiling main.c...
+..\USER\main.c(36): error:  #20: identifier "SendBuff" is undefined
+..\USER\main.c:                   SendBuff[cnt++]  = (u8)Camera_Data;                                                           
+..\USER\main.c:                   ^
+..\USER\main.c(45): error:  #17: expected a "]"
+..\USER\main.c:   u8 SendBuff[SEND_BUF_SIZE] = {0xaa,0x03};// 帧头，用于区分数据
+..\USER\main.c:               ^
+..\USER\main.c(45): error:  #169: expected a declaration
+..\USER\main.c:   u8 SendBuff[SEND_BUF_SIZE] = {0xaa,0x03};// 帧头，用于区分数据
+..\USER\main.c:                            ^
+..\USER\main.c: ..\USER\main.c: 0 warnings, 3 errors
+..\USER\main.c - 3 Error(s), 0 Warning(s).
+compiling main.c...
+..\USER\main.c(22): error:  #17: expected a "]"
+..\USER\main.c:   u8 SendBuff[SEND_BUF_SIZE];
+..\USER\main.c:               ^
+..\USER\main.c(22): error:  #169: expected a declaration
+..\USER\main.c:   u8 SendBuff[SEND_BUF_SIZE];
+..\USER\main.c:                            ^
+..\USER\main.c(45): error:  #17: expected a "]"
+..\USER\main.c:   u8 SendBuff[SEND_BUF_SIZE] = {0xaa,0x03};// 帧头，用于区分数据
+..\USER\main.c:               ^
+..\USER\main.c(45): error:  #169: expected a declaration
+..\USER\main.c:   u8 SendBuff[SEND_BUF_SIZE] = {0xaa,0x03};// 帧头，用于区分数据
+..\USER\main.c:                            ^
+..\USER\main.c: ..\USER\main.c: 0 warnings, 4 errors
+..\USER\main.c - 4 Error(s), 0 Warning(s).
+compiling main.c...
+..\USER\main.c(35): error:  #20: identifier "SendBuff" is undefined
+..\USER\main.c:                   SendBuff[cnt++]  = (u8)Camera_Data;                                                           
+..\USER\main.c:                   ^
+..\USER\main.c(44): error:  #17: expected a "]"
+..\USER\main.c:   u8 SendBuff[SEND_BUF_SIZE] = {0xaa,0x03};// 帧头，用于区分数据
+..\USER\main.c:               ^
+..\USER\main.c(44): error:  #169: expected a declaration
+..\USER\main.c:   u8 SendBuff[SEND_BUF_SIZE] = {0xaa,0x03};// 帧头，用于区分数据
+..\USER\main.c:                            ^
+..\USER\main.c: ..\USER\main.c: 0 warnings, 3 errors
+..\USER\main.c - 3 Error(s), 0 Warning(s).
+compiling main.c...
+..\USER\main.c(26): error:  #17: expected a "]"
+..\USER\main.c:   u8 SendBuff[SEND_BUF_SIZE] = {0xaa,0x03};// 帧头，用于区分数据
+..\USER\main.c:               ^
+..\USER\main.c(26): error:  #169: expected a declaration
+..\USER\main.c:   u8 SendBuff[SEND_BUF_SIZE] = {0xaa,0x03};// 帧头，用于区分数据
+..\USER\main.c:                            ^
+..\USER\main.c: ..\USER\main.c: 0 warnings, 2 errors
+..\USER\main.c - 2 Error(s), 0 Warning(s).
+compiling main.c...
+..\USER\main.c - 0 Error(s), 0 Warning(s).
+Build target 'DMAtest'
+compiling stm32f10x_it.c...
+compiling bsp_ov7725.c...
+linking...
+Program Size: Code=8080 RO-data=368 RW-data=2236 ZI-data=1268  
+FromELF: creating hex file...
+"..\OBJ\DMAtest.axf" - 0 Error(s), 0 Warning(s).
+Build target 'DMAtest'
+compiling core_cm3.c...
+assembling startup_stm32f10x_hd.s...
+compiling misc.c...
+compiling stm32f10x_dma.c...
+compiling stm32f10x_rcc.c...
+compiling stm32f10x_tim.c...
+compiling stm32f10x_usart.c...
+compiling stm32f10x_gpio.c...
+compiling stm32f10x_exti.c...
+compiling main.c...
+compiling stm32f10x_it.c...
+compiling system_stm32f10x.c...
+compiling dma.c...
+compiling bsp_ov7725.c...
+compiling bsp_sccb.c...
+compiling delay.c...
+compiling sys.c...
+compiling usart.c...
+linking...
+Program Size: Code=8080 RO-data=368 RW-data=2236 ZI-data=1268  
+FromELF: creating hex file...
+"..\OBJ\DMAtest.axf" - 0 Error(s), 0 Warning(s).
+Build target 'DMAtest'
+compiling core_cm3.c...
+assembling startup_stm32f10x_hd.s...
+compiling misc.c...
+compiling stm32f10x_dma.c...
+compiling stm32f10x_rcc.c...
+compiling stm32f10x_tim.c...
+compiling stm32f10x_usart.c...
+compiling stm32f10x_gpio.c...
+compiling stm32f10x_exti.c...
+compiling main.c...
+compiling stm32f10x_it.c...
+compiling system_stm32f10x.c...
+compiling dma.c...
+compiling bsp_ov7725.c...
+compiling bsp_sccb.c...
+compiling delay.c...
+compiling sys.c...
+compiling usart.c...
+linking...
+Program Size: Code=8072 RO-data=368 RW-data=2236 ZI-data=1268  
+FromELF: creating hex file...
+"..\OBJ\DMAtest.axf" - 0 Error(s), 0 Warning(s).
+Build target 'DMAtest'
+compiling core_cm3.c...
+assembling startup_stm32f10x_hd.s...
+compiling misc.c...
+compiling stm32f10x_dma.c...
+compiling stm32f10x_rcc.c...
+compiling stm32f10x_tim.c...
+compiling stm32f10x_usart.c...
+compiling stm32f10x_gpio.c...
+compiling stm32f10x_exti.c...
+compiling main.c...
+compiling stm32f10x_it.c...
+compiling system_stm32f10x.c...
+compiling dma.c...
+compiling bsp_ov7725.c...
+compiling bsp_sccb.c...
+compiling delay.c...
+compiling sys.c...
+compiling usart.c...
+linking...
+Program Size: Code=8084 RO-data=336 RW-data=19436 ZI-data=1268  
+FromELF: creating hex file...
+"..\OBJ\DMAtest.axf" - 0 Error(s), 0 Warning(s).
+compiling bsp_ov7725.c...
+..\USER\bsp_ov7725.c - 0 Error(s), 0 Warning(s).
+Build target 'DMAtest'
+compiling core_cm3.c...
+assembling startup_stm32f10x_hd.s...
+compiling misc.c...
+compiling stm32f10x_dma.c...
+compiling stm32f10x_rcc.c...
+compiling stm32f10x_tim.c...
+compiling stm32f10x_usart.c...
+compiling stm32f10x_gpio.c...
+compiling stm32f10x_exti.c...
+compiling main.c...
+compiling stm32f10x_it.c...
+compiling system_stm32f10x.c...
+compiling dma.c...
+compiling bsp_ov7725.c...
+compiling bsp_sccb.c...
+compiling delay.c...
+compiling sys.c...
+compiling usart.c...
+linking...
+Program Size: Code=8076 RO-data=336 RW-data=19436 ZI-data=1268  
+FromELF: creating hex file...
+"..\OBJ\DMAtest.axf" - 0 Error(s), 0 Warning(s).
+Build target 'DMAtest'
+compiling core_cm3.c...
+assembling startup_stm32f10x_hd.s...
+compiling misc.c...
+compiling stm32f10x_dma.c...
+compiling stm32f10x_rcc.c...
+compiling stm32f10x_tim.c...
+compiling stm32f10x_usart.c...
+compiling stm32f10x_gpio.c...
+compiling stm32f10x_exti.c...
+compiling main.c...
+compiling stm32f10x_it.c...
+compiling system_stm32f10x.c...
+compiling dma.c...
+compiling bsp_ov7725.c...
+compiling bsp_sccb.c...
+compiling delay.c...
+compiling sys.c...
+compiling usart.c...
+linking...
+Program Size: Code=8084 RO-data=336 RW-data=19436 ZI-data=1268  
+FromELF: creating hex file...
+"..\OBJ\DMAtest.axf" - 0 Error(s), 0 Warning(s).
+Load "..\\OBJ\\DMAtest.AXF" 
+Set JLink Project File to "D:\keil_workspace\STM32Project\DMAtest\PRJ\JLinkSettings.ini"
+ 
+JLink info:
+------------
+DLL: V4.15n, compiled Jun 18 2010 19:55:09
+Firmware: J-Link ARM V8 compiled Jul 17 2014 12:31:18
+Hardware: V8.00
+S/N : 17935099 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash 
+ 
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+ROMTableAddr = 0xE00FF003
+ 
+Target info:
+------------
+Device: STM32F103VE
+VTarget = 3.261V
+State of Pins: 
+TCK: 1, TDI: 0, TDO: 0, TMS: 0, TRES: 1, TRST: 1
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Hardware-Breakpoints: 6
+Software-Breakpoints: 2048
+Watchpoints:          4
+JTAG speed: 2000 kHz
+ 
+Erase Done.
+Programming Done.
+Verify OK.
+Build target 'DMAtest'
+compiling core_cm3.c...
+assembling startup_stm32f10x_hd.s...
+compiling misc.c...
+compiling stm32f10x_dma.c...
+compiling stm32f10x_rcc.c...
+compiling stm32f10x_tim.c...
+compiling stm32f10x_usart.c...
+compiling stm32f10x_gpio.c...
+compiling stm32f10x_exti.c...
+compiling main.c...
+compiling stm32f10x_it.c...
+compiling system_stm32f10x.c...
+compiling dma.c...
+compiling bsp_ov7725.c...
+compiling bsp_sccb.c...
+compiling delay.c...
+compiling sys.c...
+compiling usart.c...
+linking...
+Program Size: Code=8084 RO-data=336 RW-data=19436 ZI-data=1268  
+FromELF: creating hex file...
+"..\OBJ\DMAtest.axf" - 0 Error(s), 0 Warning(s).
+Build target 'DMAtest'
+compiling core_cm3.c...
+assembling startup_stm32f10x_hd.s...
+compiling misc.c...
+compiling stm32f10x_dma.c...
+compiling stm32f10x_rcc.c...
+compiling stm32f10x_tim.c...
+compiling stm32f10x_usart.c...
+compiling stm32f10x_gpio.c...
+compiling stm32f10x_exti.c...
+compiling main.c...
+compiling stm32f10x_it.c...
+compiling system_stm32f10x.c...
+compiling dma.c...
+compiling bsp_ov7725.c...
+compiling bsp_sccb.c...
+compiling delay.c...
+compiling sys.c...
+compiling usart.c...
+linking...
+Program Size: Code=8084 RO-data=336 RW-data=19436 ZI-data=1268  
+FromELF: creating hex file...
+"..\OBJ\DMAtest.axf" - 0 Error(s), 0 Warning(s).
+Load "..\\OBJ\\DMAtest.AXF" 
+Set JLink Project File to "D:\keil_workspace\STM32Project\DMAtest\PRJ\JLinkSettings.ini"
+ 
+JLink info:
+------------
+DLL: V4.15n, compiled Jun 18 2010 19:55:09
+Firmware: J-Link ARM V8 compiled Jul 17 2014 12:31:18
+Hardware: V8.00
+S/N : 17935099 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash 
+ 
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+ROMTableAddr = 0xE00FF003
+ 
+Target info:
+------------
+Device: STM32F103VE
+VTarget = 3.267V
+State of Pins: 
+TCK: 1, TDI: 0, TDO: 0, TMS: 0, TRES: 1, TRST: 1
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Hardware-Breakpoints: 6
+Software-Breakpoints: 2048
+Watchpoints:          4
+JTAG speed: 2000 kHz
+ 
+Erase Done.
+Programming Done.
+Verify OK.
+Build target 'DMAtest'
+compiling core_cm3.c...
+assembling startup_stm32f10x_hd.s...
+compiling misc.c...
+compiling stm32f10x_dma.c...
+compiling stm32f10x_rcc.c...
+compiling stm32f10x_tim.c...
+compiling stm32f10x_usart.c...
+compiling stm32f10x_gpio.c...
+compiling stm32f10x_exti.c...
+compiling main.c...
+compiling stm32f10x_it.c...
+compiling system_stm32f10x.c...
+compiling dma.c...
+compiling bsp_ov7725.c...
+compiling bsp_sccb.c...
+compiling delay.c...
+compiling sys.c...
+compiling usart.c...
+linking...
+Program Size: Code=8528 RO-data=336 RW-data=19436 ZI-data=1268  
+FromELF: creating hex file...
+"..\OBJ\DMAtest.axf" - 0 Error(s), 0 Warning(s).
+Load "..\\OBJ\\DMAtest.AXF" 
+Set JLink Project File to "D:\keil_workspace\STM32Project\DMAtest\PRJ\JLinkSettings.ini"
+ 
+JLink info:
+------------
+DLL: V4.15n, compiled Jun 18 2010 19:55:09
+Firmware: J-Link ARM V8 compiled Jul 17 2014 12:31:18
+Hardware: V8.00
+S/N : 17935099 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash 
+ 
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+ROMTableAddr = 0xE00FF003
+ 
+Target info:
+------------
+Device: STM32F103VE
+VTarget = 3.261V
+State of Pins: 
+TCK: 1, TDI: 0, TDO: 0, TMS: 0, TRES: 1, TRST: 1
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Hardware-Breakpoints: 6
+Software-Breakpoints: 2048
+Watchpoints:          4
+JTAG speed: 2000 kHz
+ 
+Erase Done.
+Programming Done.
+Verify OK.
+compiling bsp_ov7725.c...
+..\USER\bsp_ov7725.c(339): warning:  #223-D: function "DEBUG" declared implicitly
+..\USER\bsp_ov7725.c:                   DEBUG("sccb write data error");         
+..\USER\bsp_ov7725.c:                   ^
+..\USER\bsp_ov7725.c(345): warning:  #223-D: function "DEBUG" declared implicitly
+..\USER\bsp_ov7725.c:                   DEBUG("read id faild");         
+..\USER\bsp_ov7725.c:                   ^
+..\USER\bsp_ov7725.c(348): warning:  #223-D: function "DEBUG" declared implicitly
+..\USER\bsp_ov7725.c:           DEBUG("Sensor ID is 0x%x", Sensor_IDCode);      
+..\USER\bsp_ov7725.c:           ^
+..\USER\bsp_ov7725.c: ..\USER\bsp_ov7725.c: 3 warnings, 0 errors
+..\USER\bsp_ov7725.c - 0 Error(s), 3 Warning(s).
+Build target 'DMAtest'
+compiling core_cm3.c...
+assembling startup_stm32f10x_hd.s...
+compiling misc.c...
+compiling stm32f10x_dma.c...
+compiling stm32f10x_rcc.c...
+compiling stm32f10x_tim.c...
+compiling stm32f10x_usart.c...
+compiling stm32f10x_gpio.c...
+compiling stm32f10x_exti.c...
+compiling main.c...
+..\USER\main.c(104): error:  #169: expected a declaration
+..\USER\main.c:   }
+..\USER\main.c:   ^
+..\USER\main.c(108): warning: At end of source:  #12-D: parsing restarts here after previous syntax error
+..\USER\main.c: ..\USER\main.c: 1 warning, 1 error
+compiling stm32f10x_it.c...
+compiling system_stm32f10x.c...
+compiling dma.c...
+compiling bsp_ov7725.c...
+..\USER\bsp_ov7725.c(339): warning:  #223-D: function "DEBUG" declared implicitly
+..\USER\bsp_ov7725.c:                   DEBUG("sccb write data error");         
+..\USER\bsp_ov7725.c:                   ^
+..\USER\bsp_ov7725.c(345): warning:  #223-D: function "DEBUG" declared implicitly
+..\USER\bsp_ov7725.c:                   DEBUG("read id faild");         
+..\USER\bsp_ov7725.c:                   ^
+..\USER\bsp_ov7725.c(348): warning:  #223-D: function "DEBUG" declared implicitly
+..\USER\bsp_ov7725.c:           DEBUG("Sensor ID is 0x%x", Sensor_IDCode);      
+..\USER\bsp_ov7725.c:           ^
+..\USER\bsp_ov7725.c: ..\USER\bsp_ov7725.c: 3 warnings, 0 errors
+compiling bsp_sccb.c...
+Project build/rebuild aborted.
+Target not created
+compiling bsp_ov7725.c...
+..\USER\bsp_ov7725.c(339): warning:  #223-D: function "DEBUG" declared implicitly
+..\USER\bsp_ov7725.c:                   DEBUG("sccb write data error");         
+..\USER\bsp_ov7725.c:                   ^
+..\USER\bsp_ov7725.c(345): warning:  #223-D: function "DEBUG" declared implicitly
+..\USER\bsp_ov7725.c:                   DEBUG("read id faild");         
+..\USER\bsp_ov7725.c:                   ^
+..\USER\bsp_ov7725.c(348): warning:  #223-D: function "DEBUG" declared implicitly
+..\USER\bsp_ov7725.c:           DEBUG("Sensor ID is 0x%x", Sensor_IDCode);      
+..\USER\bsp_ov7725.c:           ^
+..\USER\bsp_ov7725.c: ..\USER\bsp_ov7725.c: 3 warnings, 0 errors
+..\USER\bsp_ov7725.c - 0 Error(s), 3 Warning(s).
+compiling bsp_ov7725.c...
+..\USER\bsp_ov7725.c(339): warning:  #223-D: function "DEBUG" declared implicitly
+..\USER\bsp_ov7725.c:                   DEBUG("sccb write data error");         
+..\USER\bsp_ov7725.c:                   ^
+..\USER\bsp_ov7725.c(345): warning:  #223-D: function "DEBUG" declared implicitly
+..\USER\bsp_ov7725.c:                   DEBUG("read id faild");         
+..\USER\bsp_ov7725.c:                   ^
+..\USER\bsp_ov7725.c(348): warning:  #223-D: function "DEBUG" declared implicitly
+..\USER\bsp_ov7725.c:           DEBUG("Sensor ID is 0x%x", Sensor_IDCode);      
+..\USER\bsp_ov7725.c:           ^
+..\USER\bsp_ov7725.c: ..\USER\bsp_ov7725.c: 3 warnings, 0 errors
+..\USER\bsp_ov7725.c - 0 Error(s), 3 Warning(s).
+compiling bsp_ov7725.c...
+..\USER\bsp_ov7725.c(339): warning:  #223-D: function "DEBUG" declared implicitly
+..\USER\bsp_ov7725.c:                   DEBUG("sccb write data error");         
+..\USER\bsp_ov7725.c:                   ^
+..\USER\bsp_ov7725.c(345): warning:  #223-D: function "DEBUG" declared implicitly
+..\USER\bsp_ov7725.c:                   DEBUG("read id faild");         
+..\USER\bsp_ov7725.c:                   ^
+..\USER\bsp_ov7725.c(348): warning:  #223-D: function "DEBUG" declared implicitly
+..\USER\bsp_ov7725.c:           DEBUG("Sensor ID is 0x%x", Sensor_IDCode);      
+..\USER\bsp_ov7725.c:           ^
+..\USER\bsp_ov7725.c: ..\USER\bsp_ov7725.c: 3 warnings, 0 errors
+..\USER\bsp_ov7725.c - 0 Error(s), 3 Warning(s).
+compiling bsp_ov7725.c...
+..\USER\bsp_ov7725.c(356): warning:  #225-D: the format string ends before this argument
+..\USER\bsp_ov7725.c:                                   OV7725_DEBUG("write reg faild", Sensor_Config[i].Address);
+..\USER\bsp_ov7725.c:                                   ^
+..\USER\bsp_ov7725.c: ..\USER\bsp_ov7725.c: 1 warning, 0 errors
+..\USER\bsp_ov7725.c - 0 Error(s), 1 Warning(s).
+compiling bsp_ov7725.c...
+..\USER\bsp_ov7725.c(356): warning:  #225-D: the format string ends before this argument
+..\USER\bsp_ov7725.c:                   OV7725_DEBUG("write reg faild", Sensor_Config[i].Address);
+..\USER\bsp_ov7725.c:                   ^
+..\USER\bsp_ov7725.c: ..\USER\bsp_ov7725.c: 1 warning, 0 errors
+..\USER\bsp_ov7725.c - 0 Error(s), 1 Warning(s).
+compiling bsp_ov7725.c...
+..\USER\bsp_ov7725.c(356): warning:  #225-D: the format string ends before this argument
+..\USER\bsp_ov7725.c:                   OV7725_ERROR("write reg faild", Sensor_Config[i].Address);
+..\USER\bsp_ov7725.c:                   ^
+..\USER\bsp_ov7725.c: ..\USER\bsp_ov7725.c: 1 warning, 0 errors
+..\USER\bsp_ov7725.c - 0 Error(s), 1 Warning(s).
+compiling bsp_ov7725.c...
+..\USER\bsp_ov7725.c(356): warning:  #225-D: the format string ends before this argument
+..\USER\bsp_ov7725.c:                   OV7725_ERROR("write reg faild", Sensor_Config[i].Address);
+..\USER\bsp_ov7725.c:                   ^
+..\USER\bsp_ov7725.c: ..\USER\bsp_ov7725.c: 1 warning, 0 errors
+..\USER\bsp_ov7725.c - 0 Error(s), 1 Warning(s).
+compiling bsp_ov7725.c...
+..\USER\bsp_ov7725.c(356): warning:  #225-D: the format string ends before this argument
+..\USER\bsp_ov7725.c:                   printf("write reg faild", Sensor_Config[i].Address);
+..\USER\bsp_ov7725.c:                                             ^
+..\USER\bsp_ov7725.c: ..\USER\bsp_ov7725.c: 1 warning, 0 errors
+..\USER\bsp_ov7725.c - 0 Error(s), 1 Warning(s).
+compiling bsp_ov7725.c...
+..\USER\bsp_ov7725.c(356): warning:  #225-D: the format string ends before this argument
+..\USER\bsp_ov7725.c:                   OV7725_DEBUG("write reg faild", Sensor_Config[i].Address);
+..\USER\bsp_ov7725.c:                   ^
+..\USER\bsp_ov7725.c: ..\USER\bsp_ov7725.c: 1 warning, 0 errors
+..\USER\bsp_ov7725.c - 0 Error(s), 1 Warning(s).
+compiling bsp_ov7725.c...
+..\USER\bsp_ov7725.c - 0 Error(s), 0 Warning(s).
+Build target 'DMAtest'
+compiling main.c...
+compiling stm32f10x_it.c...
+linking...
+Program Size: Code=9536 RO-data=336 RW-data=19436 ZI-data=1268  
+FromELF: creating hex file...
+"..\OBJ\DMAtest.axf" - 0 Error(s), 0 Warning(s).
+Build target 'DMAtest'
+compiling core_cm3.c...
+assembling startup_stm32f10x_hd.s...
+compiling misc.c...
+compiling stm32f10x_dma.c...
+compiling stm32f10x_rcc.c...
+compiling stm32f10x_tim.c...
+compiling stm32f10x_usart.c...
+compiling stm32f10x_gpio.c...
+compiling stm32f10x_exti.c...
+compiling main.c...
+compiling stm32f10x_it.c...
+compiling system_stm32f10x.c...
+compiling dma.c...
+compiling bsp_ov7725.c...
+compiling bsp_sccb.c...
+compiling delay.c...
+compiling sys.c...
+compiling usart.c...
+linking...
+Program Size: Code=9560 RO-data=336 RW-data=19436 ZI-data=1268  
+FromELF: creating hex file...
+"..\OBJ\DMAtest.axf" - 0 Error(s), 0 Warning(s).
+Load "..\\OBJ\\DMAtest.AXF" 
+Set JLink Project File to "D:\keil_workspace\STM32Project\DMAtest\PRJ\JLinkSettings.ini"
+ 
+JLink info:
+------------
+DLL: V4.15n, compiled Jun 18 2010 19:55:09
+Firmware: J-Link ARM V8 compiled Jul 17 2014 12:31:18
+Hardware: V8.00
+S/N : 17935099 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash 
+ 
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+ROMTableAddr = 0xE00FF003
+ 
+Target info:
+------------
+Device: STM32F103VE
+VTarget = 3.261V
+State of Pins: 
+TCK: 1, TDI: 0, TDO: 0, TMS: 0, TRES: 1, TRST: 1
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Hardware-Breakpoints: 6
+Software-Breakpoints: 2048
+Watchpoints:          4
+JTAG speed: 2000 kHz
+ 
+Erase Done.
+Programming Done.
+Verify OK.
+Build target 'DMAtest'
+compiling core_cm3.c...
+assembling startup_stm32f10x_hd.s...
+compiling misc.c...
+compiling stm32f10x_dma.c...
+compiling stm32f10x_rcc.c...
+Project build/rebuild aborted.
+Target not created
+Build target 'DMAtest'
+compiling core_cm3.c...
+assembling startup_stm32f10x_hd.s...
+compiling misc.c...
+compiling stm32f10x_dma.c...
+compiling stm32f10x_rcc.c...
+compiling stm32f10x_tim.c...
+compiling stm32f10x_usart.c...
+compiling stm32f10x_gpio.c...
+compiling stm32f10x_exti.c...
+compiling main.c...
+compiling stm32f10x_it.c...
+compiling system_stm32f10x.c...
+compiling dma.c...
+compiling bsp_ov7725.c...
+Project build/rebuild aborted.
+Target not created
+Build target 'DMAtest'
+compiling core_cm3.c...
+assembling startup_stm32f10x_hd.s...
+compiling misc.c...
+compiling stm32f10x_dma.c...
+compiling stm32f10x_rcc.c...
+compiling stm32f10x_tim.c...
+compiling stm32f10x_usart.c...
+compiling stm32f10x_gpio.c...
+compiling stm32f10x_exti.c...
+compiling main.c...
+compiling stm32f10x_it.c...
+compiling system_stm32f10x.c...
+compiling dma.c...
+compiling bsp_ov7725.c...
+compiling bsp_sccb.c...
+compiling delay.c...
+compiling sys.c...
+compiling usart.c...
+linking...
+Program Size: Code=9568 RO-data=336 RW-data=38636 ZI-data=1268  
+FromELF: creating hex file...
+"..\OBJ\DMAtest.axf" - 0 Error(s), 0 Warning(s).
+Load "..\\OBJ\\DMAtest.AXF" 
+Set JLink Project File to "D:\keil_workspace\STM32Project\DMAtest\PRJ\JLinkSettings.ini"
+ 
+JLink info:
+------------
+DLL: V4.15n, compiled Jun 18 2010 19:55:09
+Firmware: J-Link ARM V8 compiled Jul 17 2014 12:31:18
+Hardware: V8.00
+S/N : 17935099 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash 
+ 
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+ROMTableAddr = 0xE00FF003
+ 
+Target info:
+------------
+Device: STM32F103VE
+VTarget = 3.261V
+State of Pins: 
+TCK: 1, TDI: 0, TDO: 0, TMS: 0, TRES: 1, TRST: 1
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Hardware-Breakpoints: 6
+Software-Breakpoints: 2048
+Watchpoints:          4
+JTAG speed: 2000 kHz
+ 
+Erase Done.
+Programming Done.
+Verify OK.
+Build target 'DMAtest'
+compiling core_cm3.c...
+assembling startup_stm32f10x_hd.s...
+compiling misc.c...
+compiling stm32f10x_dma.c...
+compiling stm32f10x_rcc.c...
+compiling stm32f10x_tim.c...
+compiling stm32f10x_usart.c...
+compiling stm32f10x_gpio.c...
+compiling stm32f10x_exti.c...
+compiling main.c...
+..\USER\main.c(48): warning:  #177-D: variable "i" was declared but never referenced
+..\USER\main.c:       u8 i=0;
+..\USER\main.c:          ^
+..\USER\main.c(104): error:  #169: expected a declaration
+..\USER\main.c:   }
+..\USER\main.c:   ^
+..\USER\main.c(108): warning: At end of source:  #12-D: parsing restarts here after previous syntax error
+..\USER\main.c: ..\USER\main.c: 2 warnings, 1 error
+compiling stm32f10x_it.c...
+compiling system_stm32f10x.c...
+compiling dma.c...
+compiling bsp_ov7725.c...
+compiling bsp_sccb.c...
+compiling delay.c...
+compiling sys.c...
+compiling usart.c...
+Target not created
+Build target 'DMAtest'
+compiling core_cm3.c...
+assembling startup_stm32f10x_hd.s...
+compiling misc.c...
+compiling stm32f10x_dma.c...
+compiling stm32f10x_rcc.c...
+compiling stm32f10x_tim.c...
+compiling stm32f10x_usart.c...
+compiling stm32f10x_gpio.c...
+compiling stm32f10x_exti.c...
+compiling main.c...
+..\USER\main.c(48): warning:  #177-D: variable "i" was declared but never referenced
+..\USER\main.c:       u8 i=0;
+..\USER\main.c:          ^
+..\USER\main.c: ..\USER\main.c: 1 warning, 0 errors
+compiling stm32f10x_it.c...
+compiling system_stm32f10x.c...
+compiling dma.c...
+compiling bsp_ov7725.c...
+compiling bsp_sccb.c...
+compiling delay.c...
+compiling sys.c...
+compiling usart.c...
+linking...
+Program Size: Code=9548 RO-data=336 RW-data=38636 ZI-data=1268  
+FromELF: creating hex file...
+"..\OBJ\DMAtest.axf" - 0 Error(s), 1 Warning(s).
+Load "..\\OBJ\\DMAtest.AXF" 
+Set JLink Project File to "D:\keil_workspace\STM32Project\DMAtest\PRJ\JLinkSettings.ini"
+ 
+JLink info:
+------------
+DLL: V4.15n, compiled Jun 18 2010 19:55:09
+Firmware: J-Link ARM V8 compiled Jul 17 2014 12:31:18
+Hardware: V8.00
+S/N : 17935099 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash 
+ 
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+ROMTableAddr = 0xE00FF003
+ 
+Target info:
+------------
+Device: STM32F103VE
+VTarget = 3.267V
+State of Pins: 
+TCK: 1, TDI: 0, TDO: 1, TMS: 0, TRES: 1, TRST: 1
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Hardware-Breakpoints: 6
+Software-Breakpoints: 2048
+Watchpoints:          4
+JTAG speed: 2000 kHz
+ 
+Erase Done.
+Programming Done.
+Verify OK.
+Build target 'DMAtest'
+compiling core_cm3.c...
+assembling startup_stm32f10x_hd.s...
+compiling misc.c...
+compiling stm32f10x_dma.c...
+compiling stm32f10x_rcc.c...
+compiling stm32f10x_tim.c...
+compiling stm32f10x_usart.c...
+compiling stm32f10x_gpio.c...
+compiling stm32f10x_exti.c...
+compiling main.c...
+compiling stm32f10x_it.c...
+compiling system_stm32f10x.c...
+compiling dma.c...
+compiling bsp_ov7725.c...
+compiling bsp_sccb.c...
+compiling delay.c...
+compiling sys.c...
+compiling usart.c...
+linking...
+Program Size: Code=8112 RO-data=336 RW-data=38636 ZI-data=1268  
+FromELF: creating hex file...
+"..\OBJ\DMAtest.axf" - 0 Error(s), 0 Warning(s).
+Load "..\\OBJ\\DMAtest.AXF" 
+Set JLink Project File to "D:\keil_workspace\STM32Project\DMAtest\PRJ\JLinkSettings.ini"
+ 
+JLink info:
+------------
+DLL: V4.15n, compiled Jun 18 2010 19:55:09
+Firmware: J-Link ARM V8 compiled Jul 17 2014 12:31:18
+Hardware: V8.00
+S/N : 17935099 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash 
+ 
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+ROMTableAddr = 0xE00FF003
+ 
+Target info:
+------------
+Device: STM32F103VE
+VTarget = 3.267V
+State of Pins: 
+TCK: 1, TDI: 0, TDO: 0, TMS: 0, TRES: 1, TRST: 1
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Hardware-Breakpoints: 6
+Software-Breakpoints: 2048
+Watchpoints:          4
+JTAG speed: 2000 kHz
+ 
+Erase Done.
+Programming Done.
+Verify OK.
+Build target 'DMAtest'
+compiling core_cm3.c...
+assembling startup_stm32f10x_hd.s...
+compiling misc.c...
+compiling stm32f10x_dma.c...
+compiling stm32f10x_rcc.c...
+compiling stm32f10x_tim.c...
+compiling stm32f10x_usart.c...
+compiling stm32f10x_gpio.c...
+compiling stm32f10x_exti.c...
+compiling main.c...
+..\USER\main.c(38): error:  #20: identifier "OV7725_DATA" is undefined
+..\USER\main.c:                                 color=OV7725_DATA;      //读数据
+..\USER\main.c:                                       ^
+..\USER\main.c(42): error:  #20: identifier "YUV_U" is undefined
+..\USER\main.c:                                 YUV_U=OV7725_DATA;      //读数据
+..\USER\main.c:                                 ^
+..\USER\main.c: ..\USER\main.c: 0 warnings, 2 errors
+compiling stm32f10x_it.c...
+compiling system_stm32f10x.c...
+compiling dma.c...
+compiling bsp_ov7725.c...
+compiling bsp_sccb.c...
+compiling delay.c...
+Project build/rebuild aborted.
+Target not created
+compiling main.c...
+..\USER\main.c(30): warning:  #550-D: variable "YUV_U" was set but never used
+..\USER\main.c:       u16 YUV_U;
+..\USER\main.c:           ^
+..\USER\main.c: ..\USER\main.c: 1 warning, 0 errors
+..\USER\main.c - 0 Error(s), 1 Warning(s).
+Build target 'DMAtest'
+compiling core_cm3.c...
+assembling startup_stm32f10x_hd.s...
+compiling misc.c...
+compiling stm32f10x_dma.c...
+compiling stm32f10x_rcc.c...
+compiling stm32f10x_tim.c...
+compiling stm32f10x_usart.c...
+compiling stm32f10x_gpio.c...
+compiling stm32f10x_exti.c...
+compiling main.c...
+..\USER\main.c(30): warning:  #550-D: variable "YUV_U" was set but never used
+..\USER\main.c:       u16 YUV_U;
+..\USER\main.c:           ^
+..\USER\main.c: ..\USER\main.c: 1 warning, 0 errors
+compiling stm32f10x_it.c...
+compiling system_stm32f10x.c...
+compiling dma.c...
+compiling bsp_ov7725.c...
+compiling bsp_sccb.c...
+compiling delay.c...
+compiling sys.c...
+compiling usart.c...
+linking...
+Program Size: Code=8124 RO-data=336 RW-data=19436 ZI-data=1268  
+FromELF: creating hex file...
+"..\OBJ\DMAtest.axf" - 0 Error(s), 1 Warning(s).
+Load "..\\OBJ\\DMAtest.AXF" 
+Set JLink Project File to "D:\keil_workspace\STM32Project\DMAtest\PRJ\JLinkSettings.ini"
+ 
+JLink info:
+------------
+DLL: V4.15n, compiled Jun 18 2010 19:55:09
+Firmware: J-Link ARM V8 compiled Jul 17 2014 12:31:18
+Hardware: V8.00
+S/N : 17935099 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash 
+ 
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+ROMTableAddr = 0xE00FF003
+ 
+Target info:
+------------
+Device: STM32F103VE
+VTarget = 3.261V
+State of Pins: 
+TCK: 1, TDI: 0, TDO: 0, TMS: 0, TRES: 1, TRST: 1
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Hardware-Breakpoints: 6
+Software-Breakpoints: 2048
+Watchpoints:          4
+JTAG speed: 2000 kHz
+ 
+Erase Done.
+Programming Done.
+Verify OK.
+Build target 'DMAtest'
+compiling core_cm3.c...
+assembling startup_stm32f10x_hd.s...
+compiling misc.c...
+compiling stm32f10x_dma.c...
+compiling stm32f10x_rcc.c...
+compiling stm32f10x_tim.c...
+compiling stm32f10x_usart.c...
+compiling stm32f10x_gpio.c...
+compiling stm32f10x_exti.c...
+compiling main.c...
+..\USER\main.c(30): warning:  #550-D: variable "YUV_U" was set but never used
+..\USER\main.c:       u16 YUV_U;
+..\USER\main.c:           ^
+..\USER\main.c(58): warning:  #177-D: variable "i" was declared but never referenced
+..\USER\main.c:       u8 i=0;
+..\USER\main.c:          ^
+..\USER\main.c: ..\USER\main.c: 2 warnings, 0 errors
+compiling stm32f10x_it.c...
+compiling system_stm32f10x.c...
+compiling dma.c...
+compiling bsp_ov7725.c...
+..\USER\bsp_ov7725.c(776): warning:  #223-D: function "READ_FIFO_PIXEL" declared implicitly
+..\USER\bsp_ov7725.c:                           READ_FIFO_PIXEL(Camera_Data);           /* 从FIFO读出一个rgb565像素到Camera_Data变量 */
+..\USER\bsp_ov7725.c:                           ^
+..\USER\bsp_ov7725.c: ..\USER\bsp_ov7725.c: 1 warning, 0 errors
+compiling bsp_sccb.c...
+compiling delay.c...
+compiling sys.c...
+compiling usart.c...
+linking...
+..\OBJ\DMAtest.axf: Error: L6218E: Undefined symbol READ_FIFO_PIXEL (referred from bsp_ov7725.o).
+..\OBJ\DMAtest.axf: Not enough information to list image symbols.
+..\OBJ\DMAtest.axf: Finished: 1 information, 0 warning and 1 error messages.
+Target not created
+compiling bsp_ov7725.c...
+..\USER\bsp_ov7725.c(776): warning:  #223-D: function "READ_FIFO_PIXEL" declared implicitly
+..\USER\bsp_ov7725.c:                           READ_FIFO_PIXEL(Camera_Data);           /* 从FIFO读出一个rgb565像素到Camera_Data变量 */
+..\USER\bsp_ov7725.c:                           ^
+..\USER\bsp_ov7725.c: ..\USER\bsp_ov7725.c: 1 warning, 0 errors
+..\USER\bsp_ov7725.c - 0 Error(s), 1 Warning(s).
+compiling bsp_ov7725.c...
+..\USER\bsp_ov7725.c(767): warning:  #177-D: variable "Camera_Data" was declared but never referenced
+..\USER\bsp_ov7725.c:           uint16_t Camera_Data;
+..\USER\bsp_ov7725.c:                    ^
+..\USER\bsp_ov7725.c: ..\USER\bsp_ov7725.c: 1 warning, 0 errors
+..\USER\bsp_ov7725.c - 0 Error(s), 1 Warning(s).
+compiling bsp_ov7725.c...
+..\USER\bsp_ov7725.c - 0 Error(s), 0 Warning(s).
+compiling dma.c...
+..\USER\dma.c - 0 Error(s), 0 Warning(s).
+compiling main.c...
+..\USER\main.c(30): warning:  #550-D: variable "YUV_U" was set but never used
+..\USER\main.c:       u16 YUV_U;
+..\USER\main.c:           ^
+..\USER\main.c(58): warning:  #177-D: variable "i" was declared but never referenced
+..\USER\main.c:       u8 i=0;
+..\USER\main.c:          ^
+..\USER\main.c: ..\USER\main.c: 2 warnings, 0 errors
+..\USER\main.c - 0 Error(s), 2 Warning(s).
+compiling bsp_ov7725.c...
+..\USER\bsp_ov7725.c - 0 Error(s), 0 Warning(s).
+compiling main.c...
+..\USER\main.c(30): warning:  #550-D: variable "YUV_U" was set but never used
+..\USER\main.c:       u16 YUV_U;
+..\USER\main.c:           ^
+..\USER\main.c(87): error:  #20: identifier "OV7725_CS" is undefined
+..\USER\main.c:       OV7725_CS=0;
+..\USER\main.c:       ^
+..\USER\main.c(58): warning:  #177-D: variable "i" was declared but never referenced
+..\USER\main.c:       u8 i=0;
+..\USER\main.c:          ^
+..\USER\main.c: ..\USER\main.c: 2 warnings, 1 error
+..\USER\main.c - 1 Error(s), 2 Warning(s).
+compiling bsp_ov7725.c...
+..\USER\bsp_ov7725.c - 0 Error(s), 0 Warning(s).
+compiling main.c...
+..\USER\main.c(30): warning:  #550-D: variable "YUV_U" was set but never used
+..\USER\main.c:       u16 YUV_U;
+..\USER\main.c:           ^
+..\USER\main.c(58): warning:  #177-D: variable "i" was declared but never referenced
+..\USER\main.c:       u8 i=0;
+..\USER\main.c:          ^
+..\USER\main.c: ..\USER\main.c: 2 warnings, 0 errors
+..\USER\main.c - 0 Error(s), 2 Warning(s).
+Build target 'DMAtest'
+compiling core_cm3.c...
+assembling startup_stm32f10x_hd.s...
+compiling misc.c...
+compiling stm32f10x_dma.c...
+compiling stm32f10x_rcc.c...
+compiling stm32f10x_tim.c...
+compiling stm32f10x_usart.c...
+compiling stm32f10x_gpio.c...
+compiling stm32f10x_exti.c...
+compiling main.c...
+..\USER\main.c(30): warning:  #550-D: variable "YUV_U" was set but never used
+..\USER\main.c:       u16 YUV_U;
+..\USER\main.c:           ^
+..\USER\main.c: ..\USER\main.c: 1 warning, 0 errors
+compiling stm32f10x_it.c...
+compiling system_stm32f10x.c...
+compiling dma.c...
+compiling bsp_ov7725.c...
+compiling bsp_sccb.c...
+compiling delay.c...
+compiling sys.c...
+compiling usart.c...
+linking...
+Program Size: Code=8056 RO-data=336 RW-data=19436 ZI-data=1268  
+FromELF: creating hex file...
+"..\OBJ\DMAtest.axf" - 0 Error(s), 1 Warning(s).
+Load "..\\OBJ\\DMAtest.AXF" 
+Set JLink Project File to "D:\keil_workspace\STM32Project\DMAtest\PRJ\JLinkSettings.ini"
+ 
+JLink info:
+------------
+DLL: V4.15n, compiled Jun 18 2010 19:55:09
+Firmware: J-Link ARM V8 compiled Jul 17 2014 12:31:18
+Hardware: V8.00
+S/N : 17935099 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash 
+ 
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+ROMTableAddr = 0xE00FF003
+ 
+Target info:
+------------
+Device: STM32F103VE
+VTarget = 3.267V
+State of Pins: 
+TCK: 1, TDI: 0, TDO: 0, TMS: 0, TRES: 1, TRST: 1
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Hardware-Breakpoints: 6
+Software-Breakpoints: 2048
+Watchpoints:          4
+JTAG speed: 2000 kHz
+ 
+Erase Done.
+Programming Done.
+Verify OK.
+Build target 'DMAtest'
+compiling core_cm3.c...
+assembling startup_stm32f10x_hd.s...
+compiling misc.c...
+compiling stm32f10x_dma.c...
+compiling stm32f10x_rcc.c...
+compiling stm32f10x_tim.c...
+compiling stm32f10x_usart.c...
+compiling stm32f10x_gpio.c...
+compiling stm32f10x_exti.c...
+compiling main.c...
+compiling stm32f10x_it.c...
+compiling system_stm32f10x.c...
+compiling dma.c...
+compiling bsp_ov7725.c...
+compiling bsp_sccb.c...
+compiling delay.c...
+compiling sys.c...
+compiling usart.c...
+linking...
+Program Size: Code=8008 RO-data=336 RW-data=19436 ZI-data=1268  
+FromELF: creating hex file...
+"..\OBJ\DMAtest.axf" - 0 Error(s), 0 Warning(s).
+Load "..\\OBJ\\DMAtest.AXF" 
+Set JLink Project File to "D:\keil_workspace\STM32Project\DMAtest\PRJ\JLinkSettings.ini"
+ 
+JLink info:
+------------
+DLL: V4.15n, compiled Jun 18 2010 19:55:09
+Firmware: J-Link ARM V8 compiled Jul 17 2014 12:31:18
+Hardware: V8.00
+S/N : 17935099 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash 
+ 
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+ROMTableAddr = 0xE00FF003
+ 
+Target info:
+------------
+Device: STM32F103VE
+VTarget = 3.267V
+State of Pins: 
+TCK: 1, TDI: 0, TDO: 0, TMS: 0, TRES: 1, TRST: 1
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Hardware-Breakpoints: 6
+Software-Breakpoints: 2048
+Watchpoints:          4
+JTAG speed: 2000 kHz
+ 
+Erase Done.
+Programming Done.
+Verify OK.
+Build target 'DMAtest'
+compiling core_cm3.c...
+assembling startup_stm32f10x_hd.s...
+compiling misc.c...
+compiling stm32f10x_dma.c...
+compiling stm32f10x_rcc.c...
+compiling stm32f10x_tim.c...
+compiling stm32f10x_usart.c...
+compiling stm32f10x_gpio.c...
+compiling stm32f10x_exti.c...
+compiling main.c...
+..\USER\main.c(30): warning:  #550-D: variable "YUV_U" was set but never used
+..\USER\main.c:       u16 YUV_U;
+..\USER\main.c:           ^
+..\USER\main.c: ..\USER\main.c: 1 warning, 0 errors
+compiling stm32f10x_it.c...
+compiling system_stm32f10x.c...
+compiling dma.c...
+compiling bsp_ov7725.c...
+compiling bsp_sccb.c...
+compiling delay.c...
+compiling sys.c...
+compiling usart.c...
+linking...
+Program Size: Code=8032 RO-data=336 RW-data=19436 ZI-data=1268  
+FromELF: creating hex file...
+"..\OBJ\DMAtest.axf" - 0 Error(s), 1 Warning(s).
+Load "..\\OBJ\\DMAtest.AXF" 
+Set JLink Project File to "D:\keil_workspace\STM32Project\DMAtest\PRJ\JLinkSettings.ini"
+ 
+JLink info:
+------------
+DLL: V4.15n, compiled Jun 18 2010 19:55:09
+Firmware: J-Link ARM V8 compiled Jul 17 2014 12:31:18
+Hardware: V8.00
+S/N : 17935099 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash 
+ 
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+ROMTableAddr = 0xE00FF003
+ 
+Target info:
+------------
+Device: STM32F103VE
+VTarget = 3.261V
+State of Pins: 
+TCK: 1, TDI: 0, TDO: 0, TMS: 0, TRES: 1, TRST: 1
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Hardware-Breakpoints: 6
+Software-Breakpoints: 2048
+Watchpoints:          4
+JTAG speed: 2000 kHz
+ 
+Erase Done.
+Programming Done.
+Verify OK.
+Build target 'DMAtest'
+compiling core_cm3.c...
+assembling startup_stm32f10x_hd.s...
+compiling misc.c...
+compiling stm32f10x_dma.c...
+compiling stm32f10x_rcc.c...
+compiling stm32f10x_tim.c...
+compiling stm32f10x_usart.c...
+compiling stm32f10x_gpio.c...
+compiling stm32f10x_exti.c...
+compiling main.c...
+..\USER\main.c(30): warning:  #550-D: variable "YUV_U" was set but never used
+..\USER\main.c:       u16 YUV_U;
+..\USER\main.c:           ^
+..\USER\main.c(56): warning:  #177-D: variable "i" was declared but never referenced
+..\USER\main.c:       u8 i=0;
+..\USER\main.c:          ^
+..\USER\main.c: ..\USER\main.c: 2 warnings, 0 errors
+compiling stm32f10x_it.c...
+compiling system_stm32f10x.c...
+compiling dma.c...
+compiling bsp_ov7725.c...
+compiling bsp_sccb.c...
+compiling delay.c...
+compiling sys.c...
+compiling usart.c...
+linking...
+Program Size: Code=8024 RO-data=336 RW-data=19436 ZI-data=1268  
+FromELF: creating hex file...
+"..\OBJ\DMAtest.axf" - 0 Error(s), 2 Warning(s).
+Load "..\\OBJ\\DMAtest.AXF" 
+Set JLink Project File to "D:\keil_workspace\STM32Project\DMAtest\PRJ\JLinkSettings.ini"
+ 
+JLink info:
+------------
+DLL: V4.15n, compiled Jun 18 2010 19:55:09
+Firmware: J-Link ARM V8 compiled Jul 17 2014 12:31:18
+Hardware: V8.00
+S/N : 17935099 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash 
+ 
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+ROMTableAddr = 0xE00FF003
+ 
+Target info:
+------------
+Device: STM32F103VE
+VTarget = 3.261V
+State of Pins: 
+TCK: 1, TDI: 0, TDO: 1, TMS: 0, TRES: 1, TRST: 1
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Hardware-Breakpoints: 6
+Software-Breakpoints: 2048
+Watchpoints:          4
+JTAG speed: 2000 kHz
+ 
+Erase Done.
+Programming Done.
+Verify OK.
+Build target 'DMAtest'
+compiling core_cm3.c...
+assembling startup_stm32f10x_hd.s...
+compiling misc.c...
+compiling stm32f10x_dma.c...
+compiling stm32f10x_rcc.c...
+compiling stm32f10x_tim.c...
+compiling stm32f10x_usart.c...
+compiling stm32f10x_gpio.c...
+compiling stm32f10x_exti.c...
+compiling main.c...
+..\USER\main.c(30): warning:  #550-D: variable "YUV_U" was set but never used
+..\USER\main.c:       u16 YUV_U;
+..\USER\main.c:           ^
+..\USER\main.c(95): warning:  #223-D: function "delayms" declared implicitly
+..\USER\main.c:               delayms(500);
+..\USER\main.c:               ^
+..\USER\main.c(56): warning:  #177-D: variable "i" was declared but never referenced
+..\USER\main.c:       u8 i=0;
+..\USER\main.c:          ^
+..\USER\main.c: ..\USER\main.c: 3 warnings, 0 errors
+compiling stm32f10x_it.c...
+compiling system_stm32f10x.c...
+compiling dma.c...
+compiling bsp_ov7725.c...
+compiling bsp_sccb.c...
+compiling delay.c...
+compiling sys.c...
+compiling usart.c...
+linking...
+..\OBJ\DMAtest.axf: Error: L6218E: Undefined symbol delayms (referred from main.o).
+..\OBJ\DMAtest.axf: Not enough information to list image symbols.
+..\OBJ\DMAtest.axf: Finished: 1 information, 0 warning and 1 error messages.
+Target not created
+compiling main.c...
+..\USER\main.c(30): warning:  #550-D: variable "YUV_U" was set but never used
+..\USER\main.c:       u16 YUV_U;
+..\USER\main.c:           ^
+..\USER\main.c(56): warning:  #177-D: variable "i" was declared but never referenced
+..\USER\main.c:       u8 i=0;
+..\USER\main.c:          ^
+..\USER\main.c: ..\USER\main.c: 2 warnings, 0 errors
+..\USER\main.c - 0 Error(s), 2 Warning(s).
+compiling main.c...
+..\USER\main.c(30): warning:  #550-D: variable "YUV_U" was set but never used
+..\USER\main.c:       u16 YUV_U;
+..\USER\main.c:           ^
+..\USER\main.c: ..\USER\main.c: 1 warning, 0 errors
+..\USER\main.c - 0 Error(s), 1 Warning(s).
+Build target 'DMAtest'
+compiling core_cm3.c...
+assembling startup_stm32f10x_hd.s...
+compiling misc.c...
+compiling stm32f10x_dma.c...
+compiling stm32f10x_rcc.c...
+compiling stm32f10x_tim.c...
+compiling stm32f10x_usart.c...
+compiling stm32f10x_gpio.c...
+compiling stm32f10x_exti.c...
+compiling main.c...
+..\USER\main.c(30): warning:  #550-D: variable "YUV_U" was set but never used
+..\USER\main.c:       u16 YUV_U;
+..\USER\main.c:           ^
+..\USER\main.c: ..\USER\main.c: 1 warning, 0 errors
+compiling stm32f10x_it.c...
+compiling system_stm32f10x.c...
+compiling dma.c...
+compiling bsp_ov7725.c...
+compiling bsp_sccb.c...
+compiling delay.c...
+compiling sys.c...
+compiling usart.c...
+linking...
+Program Size: Code=8028 RO-data=336 RW-data=19436 ZI-data=1268  
+FromELF: creating hex file...
+"..\OBJ\DMAtest.axf" - 0 Error(s), 1 Warning(s).
+Load "..\\OBJ\\DMAtest.AXF" 
+Set JLink Project File to "D:\keil_workspace\STM32Project\DMAtest\PRJ\JLinkSettings.ini"
+ 
+JLink info:
+------------
+DLL: V4.15n, compiled Jun 18 2010 19:55:09
+Firmware: J-Link ARM V8 compiled Jul 17 2014 12:31:18
+Hardware: V8.00
+S/N : 17935099 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash 
+ 
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+ROMTableAddr = 0xE00FF003
+ 
+Target info:
+------------
+Device: STM32F103VE
+VTarget = 3.267V
+State of Pins: 
+TCK: 1, TDI: 0, TDO: 0, TMS: 0, TRES: 1, TRST: 1
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Hardware-Breakpoints: 6
+Software-Breakpoints: 2048
+Watchpoints:          4
+JTAG speed: 2000 kHz
+ 
+Erase Done.
+Programming Done.
+Verify OK.
